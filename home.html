@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Blank page - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+  <!-- CSS files -->
+  <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet" />
+  <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet" />
+  <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet" />
+  <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet" />
+  <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet" />
+  <link href="./dist/css/tabler.css" rel="stylesheet" />
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    body {
+      font-feature-settings: "cv03", "cv04", "cv11";
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="row align-items-center">
+      <div class="col-5 col-sm-4 col-md-2 col-xl py-3">
+        <a href="#" style="color: black;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M15 6l-6 6l6 6" />
+          </svg>
+        </a>
+      </div>
+      <div class="col-7 col-sm-4 col-md-2 col-xl py-3">
+        <strong>H 1234 DU</strong>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="container-xl">
+        <div class="input-icon mb-3">
+          <input type="text" value="" class="form-control rounded-16" style="height: 43px; border-color: #EB5241;"
+            placeholder="Cari ID Tilang">
+          <span class="input-icon-addon">
+            <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+          </span>
+        </div>
+
+        <div class="row row-cards">
+          <div class="col-md-4">
+            <div class="tabs-container">
+              <div class="tabs-wrapper">
+                <div class="tab" onclick="changeTab(1)">Semua</div>
+                <div class="tab" onclick="changeTab(2)">Belum Dibayar</div>
+                <div class="tab" onclick="changeTab(3)">Menunggu Transfer</div>
+                <div class="tab" onclick="changeTab(4)">Sudah Dibayar</div>
+                <div class="tab" onclick="changeTab(5)">Selesai</div>
+                <!-- <div class="tab" onclick="changeTab(6)">Tab 6</div> -->
+              </div>
+            </div>
+            <div class="content-container">
+              <div class="content" id="content1">
+                <div class="row row-cards">
+                  <div class="col-md-4 col-sm-6">
+                    <div class="card">
+                      <div class="card-header" style="border-bottom: none;">
+                        <div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="small strong">ID #H6869tf13092023
+                              </div>
+                              <div class="card-subtitle small">13/09/2023 12:32</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-actions">
+                          <span class="badge rounded-16" style="background: #EB5241;">Baru</span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <span class="avatar" style="background-image: url(dist/img/assets/gembok-1.png)"></span>
+                          </div>
+                          <div class="col">
+                            <div class="card-title small">Gembok</div>
+                            <div class="card-subtitle small">Keterangan Pelanggaran :</div>
+                            <p class="small strong"
+                              style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Lorem ipsum dolor
+                              sit amet consectetur adipisicing
+                              elit. Dolore fugit accusamus corporis?</p>
+                            <div class="card-subtitle small" style="margin-left: 80%;">Denda</div>
+                            <div class="card-subtitle small" style="color: #EB5241; margin-left: 70%;">Rp. 500.000</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row align-items-center">
+                          <div class="col-6">
+                            <div class="small"><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
+                          </div>
+                          <div class="col-6">
+                            <a href="#" style="color: black; float: right;">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 6l6 6l-6 6" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content" id="content2">Konten Tab 2</div>
+              <div class="content" id="content3">Konten Tab 3</div>
+              <div class="content" id="content4">Konten Tab 4</div>
+              <div class="content" id="content5">Konten Tab 5</div>
+              <div class="content" id="content6">Konten Tab 6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function changeTab(tabNumber) {
+    // Hide all content elements
+    const contentElements = document.querySelectorAll('.content');
+    contentElements.forEach(content => {
+      content.classList.remove('show');
+    });
+
+    // Show the selected content
+    const selectedContent = document.getElementById(`content${tabNumber}`);
+    selectedContent.classList.add('show');
+  }
+
+</script>
+<script src="./dist/js/demo-theme.min.js?1684106062"></script>
+<script src="./dist/js/tabler.min.js?1684106062" defer></script>
+<script src="./dist/js/demo.min.js?1684106062" defer></script>
+
+</html>
