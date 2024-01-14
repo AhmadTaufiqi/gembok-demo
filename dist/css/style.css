@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'work sans';
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bs-font-work-sans: 'work sans';
+}
+
+body {
+  font-family: 'work sans';
+  background-color: #EFE9EA;
+  font-weight: 400;
+  font-size: 77%;
+}
+
+.navbar {
+  padding: .5rem 1rem;
+  background-color: #201F20;
+  border-radius: 3rem;
+
+}
+h6{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navbar-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 12px 10px 12px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  display: flex;
+  width: 100%;
+}
+
+.nav-item {
+  border-radius: 3rem;
+  padding: .5rem .9rem;
+}
+
+.nav-item.active {
+  border-radius: 3rem;
+  /* background-color: #ef4937; */
+  background-image: linear-gradient(126deg, #ea5040, #E42915);
+}
+
+.nav-item.active .nav-link {
+  color: white;
+}
+
+.nav-link {
+  color: #575757;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.title-homepage .title-black {
+  color: #201F20;
+  font-size: calc(1.475rem + 1.9vw);
+}
+
+.title-homepage .title-red {
+  color: #E42915;
+  font-size: calc(1.475rem + 1.9vw);
+}
+
+.img-homepage {
+  text-align: center;
+  /* height: 40vh; */
+  position: relative;
+}
+
+.glass-container {
+  border-radius: 1rem;
+  margin: -3rem 10px 0 10px;
+  padding: 1rem;
+  border: 1px solid #efefef;
+  backdrop-filter: blur(5px) brightness(100%);
+}
+
+.total-pelanggar {
+  color: #E42915;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.red-theme {
+  color: #E42915;
+}
+
+.btn-red-theme {
+  background-color: #E42915;
+  display: flex;
+  padding: 0 0 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-black {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.rounded-2 {
+  border-radius: 5rem !important;
+}
+
+.position_bar {
+  background-color: white;
+  padding: 17px;
+  position: relative;
+}
+
+.position_bar .btn_back {
+  position: absolute;
+  left: 20px;
+  top: 27%;
+  font-size: 22px;
+  text-decoration: none;
+  color: #201F20;
+  line-height: normal;
+}
+
+.content {
+  padding: 15px;
+}
+
+.border-none {
+  border: none;
+}
+
+.rounded-15 {
+  border-radius: 1.3rem;
+}
+
+.link-theme {
+  color: #E42915;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-check-input {
+  flex-shrink: 0;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  background-size: contain;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 1em;
+}
+
+.form-check-input:checked[type=checkbox] {
+  --tblr-form-check-bg-image: none;
+}
+
+.form-check-input:checked {
+  background-color: #f85f0d;
+  border-color: #f86719;
+}
+
+.input-out-border {
+  border: 2px solid #f86719;
+  border-color: #f86719;
+  border-radius: 2rem;
+  position: relative;
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="checkbox"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(245, 116, 11, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 162, 104, 0.6);
+  outline: 0 none;
+}
+
+.btn-unggah {
+  border-radius: 1rem;
+  border: 1px solid #ea5040;
+  color: #ea5040;
+  padding: .75rem 1rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.link-transfer{
+  border: unset;
+  text-align: left;
+  background-color: unset;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: #201F20;
+  line-height: 1;
+  padding: 1.2rem;
+}
+
+.bg-grey {
+  background-color: #F4F4F4;
+}
