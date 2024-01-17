@@ -128,16 +128,30 @@ h6{
   border-radius: 5rem !important;
 }
 
+.success_position_bar {
+  background-image: url('../../dist/img/assets/images/bg_succes_transaksi.jpg');
+  padding: 15px 17px;
+  position: relative;
+  height: 25vh;
+  color: white;
+}
+
+.btn-close2 {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  line-height: normal;
+}
+
 .position_bar {
   background-color: white;
-  padding: 17px;
+  padding: 15px 17px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .position_bar .btn_back {
-  position: absolute;
-  left: 20px;
-  top: 27%;
   font-size: 22px;
   text-decoration: none;
   color: #201F20;
@@ -246,4 +260,8 @@ input[type="checkbox"]:focus,
 
 .bg-grey {
   background-color: #F4F4F4;
+}
+
+.mt--5{
+margin-top:-2rem !important;
 }
