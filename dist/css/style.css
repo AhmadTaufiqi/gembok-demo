@@ -132,8 +132,10 @@ h6{
   background-image: url('../../dist/img/assets/images/bg_succes_transaksi.jpg');
   padding: 15px 17px;
   position: relative;
-  height: 25vh;
+  height: 11rem;
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .btn-close2 {

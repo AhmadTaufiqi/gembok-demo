@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buka Kamera dengan JavaScript</title>
+</head>
+<body>
+
+  <video id="videoElement" width="400" height="100%" autoplay></video>
+
+  <script>
+    startCamera()
+    function startCamera() {
+      const videoElement = document.getElementById('videoElement');
+
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then((stream) => {
+          videoElement.srcObject = stream;
+        })
+        .catch((error) => {
+          console.error('Error accessing camera:', error);
+        });
+    }
+  </script>
+
+</body>
+</html>
