@@ -169,7 +169,7 @@ h6{
 }
 
 .rounded-15 {
-  border-radius: 1.3rem;
+  border-radius: 1rem;
 }
 
 .link-theme {
@@ -266,4 +266,31 @@ input[type="checkbox"]:focus,
 
 .mt--5{
 margin-top:-2rem !important;
+}
+
+.btn-submit-cek{
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding:0 19px;
+}
+
+.bg-cek-tilang{
+  background-image:url('../img/assets/images/bg-3.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #EB5241;
+}
+
+.accordion-item{
+  border: none;
+}
+.accordion-button{
+  padding: .75rem 0rem!important;
+  line-height: 1.3;
+}
+.accordion-body{
+  padding:.5rem;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
 }
