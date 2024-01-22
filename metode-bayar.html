@@ -48,7 +48,7 @@
               <span>metode pembayaran</span>
             </div>
             <div class="col text-end">
-              <a href="" class="link-theme">
+              <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button" aria-controls="modal_payments">
                 Lihat Semua
               </a>
             </div>
@@ -84,10 +84,10 @@
               </a>
             </div>
           </div>
+          <div class="bukti_pembayaran my-3">
+            <img src="./dist/img/assets/images/struk.jpg" alt="">
+          </div>
           <div class="d-flex mt-3">
-            <!-- <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
-              Toggle bottom offcanvas
-            </a> -->
             <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom"
               class="btn btn-unggah text-center">
               <i class="fas fa-upload"></i>
@@ -168,19 +168,58 @@
       </div>
     </div>
 
-    <div class="d-flex align-items-center mt-7">
-      <div class="col">
-        <div class="card">
-          <div class="card-body text-center">
-            <p>Jika sudah transfer, mohon Upload bukti transfer & klik tombol dibawah ini agar kami dapat segera
-              memproses.</p>
-            <div class="row g-3 mt-3">
-              <div class="col-12">
-                <a href="#" class="btn rounded-16 btn-modal" style="background: #F4F4F4; border: none;">
-                  <span class="strong">Saya Sudah Transfer</span>
-                </a>
-              </div>
-            </div>
+    <div class="bg-white mt-auto px-4 py-3 text-center">
+      <p class="mb-1">Jika sudah transfer, mohon Upload bukti transfer & klik tombol dibawah ini agar kami dapat segera
+        memproses.</p>
+      <div class="row">
+        <div class="col-12">
+          <a href="#" class="btn rounded-16 btn-modal" style="background: #F4F4F4; border: none;">
+            <span class="strong">Saya Sudah Transfer</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom m-3 rounded-15 fade" style="height:auto;" tabindex="-1" id="modal_payments"
+    aria-labelledby="offcanvasLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas-header border-none py-3">
+      <b class="text-center w-100">Pilih Metode Pembayaran</b>
+    </div>
+      <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
+        <i class="fas fa-times"></i>
+      </a> -->
+      <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <div class="p-3 pt-0">
+      <div class="row m-0 mb-2 align-items-center">
+        <div class="px-1 d-flex"
+          style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+          <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+        </div>
+        <div class="col">
+          <b>Bank Jateng</b>
+          <p class="mb-0 text-truncate">Dishub Surakarta</p>
+        </div>
+        <div class="col-1">
+          <div class="custom-radio float-end align-items-center">
+            <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+            <label for="bank_jateng"></label>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 align-items-center">
+        <div class="px-1 d-flex"
+          style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+          <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+        </div>
+        <div class="col">
+          <b>BCA</b>
+          <p class="mb-0 text-truncate">Dishub Surakarta</p>
+        </div>
+        <div class="col-1">
+          <div class="custom-radio float-end align-items-center">
+            <input type="radio" id="bca" value="BCA" name="radio-group">
+            <label for="bca"></label>
           </div>
         </div>
       </div>
@@ -225,6 +264,7 @@
       </div>
     </div>
   </div>
+
   <!-- modal start -->
   <div class="modal-container modal fade" id="bottomModal">
     <div class="modal-content">

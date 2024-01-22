@@ -180,8 +180,8 @@ h6{
 
 .form-check-input {
   flex-shrink: 0;
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.5em;
+  height: 1.5em;
   margin: 0;
   vertical-align: middle;
   -webkit-appearance: none;
@@ -200,17 +200,17 @@ h6{
 }
 
 .form-check-input:checked {
-  background-color: #f85f0d;
-  border-color: #f86719;
+  background-color: #eb5241;
+  border-color: #eb5241;
 }
 
 .input-out-border {
-  border: 2px solid #f86719;
-  border-color: #f86719;
+  border: 2px solid #eb5241;
+  border-color: #eb5241;
   border-radius: 2rem;
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +272,7 @@ margin-top:-2rem !important;
   position: absolute;
   right: 0;
   text-align: right;
-  padding:0 19px;
+  padding:0 12px;
 }
 
 .bg-cek-tilang{
@@ -293,4 +293,14 @@ margin-top:-2rem !important;
   padding:.5rem;
   background-color: #F5F5F5;
   border-radius: 1rem;
+}
+
+.bukti_pembayaran{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
