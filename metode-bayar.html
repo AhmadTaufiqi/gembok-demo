@@ -183,43 +183,124 @@
 
   <div class="offcanvas offcanvas-bottom m-3 rounded-15 fade" style="height:auto;" tabindex="-1" id="modal_payments"
     aria-labelledby="offcanvasLabel" aria-modal="true" role="dialog">
-    <div class="offcanvas-header border-none py-3">
-      <b class="text-center w-100">Pilih Metode Pembayaran</b>
+    <div class="offcanvas-header border-none py-1">
     </div>
       <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
         <i class="fas fa-times"></i>
       </a> -->
       <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
     <div class="p-3 pt-0">
-      <div class="row m-0 mb-2 align-items-center">
-        <div class="px-1 d-flex"
-          style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
-          <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
-        </div>
-        <div class="col">
-          <b>Bank Jateng</b>
-          <p class="mb-0 text-truncate">Dishub Surakarta</p>
-        </div>
-        <div class="col-1">
-          <div class="custom-radio float-end align-items-center">
-            <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
-            <label for="bank_jateng"></label>
+      <div class="accordion" id="accordion-example">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-1" aria-expanded="false">
+              Transfer Bank
+            </button>
+          </h2>
+          <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank Jateng</b>
+                  <p class="mb-0 text-truncate">Dishub Surakarta</p>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row m-0 align-items-center">
-        <div class="px-1 d-flex"
-          style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
-          <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-2" aria-expanded="false">
+              Virtual Account
+            </button>
+          </h2>
+          <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank Jateng</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>  
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank BCA</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_bri" value="Bank Jateng" name="radio-group">
+                    <label for="bank_bri"></label>
+                  </div>
+                </div>
+              </div>  
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank BRI</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_bri" value="Bank Jateng" name="radio-group">
+                    <label for="bank_bri"></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <b>BCA</b>
-          <p class="mb-0 text-truncate">Dishub Surakarta</p>
-        </div>
-        <div class="col-1">
-          <div class="custom-radio float-end align-items-center">
-            <input type="radio" id="bca" value="BCA" name="radio-group">
-            <label for="bca"></label>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-3" aria-expanded="false">
+              QRIS
+            </button>
+          </h2>
+          <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>QRIS</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
