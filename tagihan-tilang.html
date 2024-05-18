@@ -1,0 +1,415 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gembox | Tagihan Tilang</title>
+  <!-- CSS files -->
+  <link href="./dist/css/tabler.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-payments.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
+  <link href="./dist/css/demo.min.css" rel="stylesheet" />
+  <link href="./dist/css/tabler.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.css">
+
+</head>
+
+<body>
+  <div class="page">
+    <div class="position_bar">
+      <a class="col-1 btn_back" href="detail-tilang.html">
+        <i class="fas fa-angle-left"></i>
+      </a>
+      <div class="col text-center bold">
+        Tagihan Tilang
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div class="p-3">
+      <div class="card mb-3 rounded-16" style="background-color: hsl(6, 83%, 49%, 12%); border: 1px solid #E42915;">
+        <div class="card-body">
+          <div class="col-2">
+            <img src="dist/img/assets/seal-warning.png" alt="">
+          </div>
+          <div class="col-12 ml-4">
+            <p style="color: #EB5241;">Silahkan selesaikan pembayaran denda anda untuk membuka gembok / Mengambil kendaraan anda.</p>
+          </div>
+        </div>
+      </div>
+      <!-- card-metode-pembayaran -->
+      <div class="card border-none rounded-15 mb-3">
+        <div class="card-body p-2">
+          <div class="d-flex mt-2">
+            <div class="col">
+              <span>Tanggal Pelanggaran</span>
+            </div>
+            <div class="col text-end">
+              <span>12/09/2023 12:12</span>
+            </div>
+          </div>
+          <h6 class="my-3">TRANSFER BANK</h6>
+          <div class="row px-3 m-0 align-items-center">
+            <div class="px-1 d-flex"
+              style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+              <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+            </div>
+            <div class="col">
+              <b>Bank Jateng</b>
+              <p class="mb-0 text-truncate">Dishub Surakarta</p>
+            </div>
+            <div class="input-out-border">
+              <input type="checkbox" class="form-check-input">
+            </div>
+          </div>
+          <div class="card bg-grey border-none rounded-15 my-3 p-3">
+            <div class="d-flex align-items-center">
+              <b class="col-9">5128770209</b>
+              <a role="button" class="col-3 text-end" onclick="copyText('5128770209')">
+                <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
+              </a>
+            </div>
+          </div>
+          <span>Jumlah Transfer</span>
+          <div class="card bg-grey border-none rounded-15 mt-1 p-3">
+            <div class="d-flex align-items-center">
+              <b class="col-9">Rp. 500.000</b>
+              <a role="button" class="col-3 text-end" onclick="copyText('500000')">
+                <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
+              </a>
+            </div>
+          </div>
+          <div class="bukti_pembayaran my-3">
+            <img src="./dist/img/assets/images/struk.jpg" alt="">
+          </div>
+          <div class="d-flex mt-3">
+            <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom"
+              class="btn btn-unggah text-center">
+              <i class="fas fa-upload"></i>
+              Unggah Bukti Transfer
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card border-none rounded-15">
+        <div class="card-body p-0">
+          <button class="link-transfer" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="col">Cara Transfer</span>
+            <i class="col text-end fa fa-angle-down"></i>
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="p-3 pt-0">
+              <b>Transfer Melalui ATM Bank Jateng</b>
+              <div>
+                <span>1. Masukkan Kartu dan PIN</span>
+                <li class="ms-3">Masukkan Kartu ATM Bank Jateng dan ketikkan PIN Anda</li>
+              </div>
+              <div>
+                <span>2. Pilih "Transfer":</span>
+                <li class="ms-3">Pada Layar Utama ATM, Pilih "Transfer".</li>
+              </div>
+              <div>
+                <span>3. Pilih Jenis "Transfer":</span>
+                <li class="ms-3">Pilih apakah Anda ingin mentransfer uang ke rekening Bank Jateng lainnya atau ke bank
+                  lain.</li>
+              </div>
+              <div>
+                <span>4. Masukkan Nomor Rekening dan Jumlah:</span>
+                <li class="ms-3">Masukkan nomor rekening penerima dan jumlah uang yang ingin Anda transfer.</li>
+              </div>
+              <div>
+                <span>5. Konfirmasi dan Ambil Struk:</span>
+                <li class="ms-3">Periksa detail transaksi, konfirmasikan, dan jangan lupa mengambil struk transaksi
+                  sebagai bukti.</li>
+              </div>
+              <b>Transfer Melalui M-Banking Bank Jateng:</b>
+              <div>
+                <span>1. Buka Aplikasi M-Banking:</span>
+                <li class="ms-3">Buka aplikasi M-Banking Bank Jateng di ponsel Anda.</li>
+              </div>
+              <div>
+                <span>2. Masuk ke Akun Anda:</span>
+                <li class="ms-3">Masuk ke akun M-Banking dengan menggunakan kredensial yang benar.</li>
+              </div>
+              <div>
+                <span>3. Pilih "Transfer":</span>
+                <li class="ms-3">Di menu utama, pilih opsi "Transfer."</li>
+              </div>
+              <div>
+                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
+                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
+              </div>
+              <b>Transfer Melalui Internet Banking Bank Jateng:</b>
+              <div>
+                <span>1. Buka Situs Internet Banking:</span>
+                <li class="ms-3">Kunjungi situs web Internet Banking Bank Jateng.</li>
+              </div>
+              <div>
+                <span>2. Masuk ke Akun Anda:</span>
+                <li class="ms-3">Masuk ke akun Internet Banking dengan menggunakan kredensial yang benar.</li>
+              </div>
+              <div>
+                <span>3. Pilih "Transfer":</span>
+                <li class="ms-3">Di dashboard, pilih opsi "Transfer."</li>
+              </div>
+              <div>
+                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
+                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white mt-auto px-4 py-3 text-center">
+      <p class="mb-1">Jika sudah transfer, mohon Upload bukti transfer & klik tombol dibawah ini agar kami dapat segera
+        memproses.</p>
+      <div class="row">
+        <div class="col-12">
+          <a href="home.html" class="btn rounded-16 btn-modal" style="background: #F4F4F4; border: none;">
+            <span class="strong">Saya Sudah Transfer</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom m-3 rounded-15 fade" style="height:auto;" tabindex="-1" id="modal_payments"
+    aria-labelledby="offcanvasLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas-header border-none py-1">
+    </div>
+      <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
+        <i class="fas fa-times"></i>
+      </a> -->
+      <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <div class="p-3 pt-0">
+      <div class="accordion" id="accordion-example">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-1" aria-expanded="false">
+              Transfer Bank
+            </button>
+          </h2>
+          <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank Jateng</b>
+                  <p class="mb-0 text-truncate">Dishub Surakarta</p>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-2" aria-expanded="false">
+              Virtual Account
+            </button>
+          </h2>
+          <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank Jateng</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>  
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank BCA</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_bri" value="Bank Jateng" name="radio-group">
+                    <label for="bank_bri"></label>
+                  </div>
+                </div>
+              </div>  
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>Bank BRI</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_bri" value="Bank Jateng" name="radio-group">
+                    <label for="bank_bri"></label>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-3" aria-expanded="false">
+              QRIS
+            </button>
+          </h2>
+          <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-example">
+            <div class="accordion-body">
+              <div class="row m-0 mb-2 align-items-center">
+                <div class="px-1 d-flex"
+                  style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                  <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+                </div>
+                <div class="col">
+                  <b>QRIS</b>
+                </div>
+                <div class="col-1">
+                  <div class="custom-radio float-end align-items-center">
+                    <input type="radio" id="bank_jateng" value="Bank Jateng" name="radio-group">
+                    <label for="bank_jateng"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom m-3  rounded-15 fade" style="height:auto;" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas-header border-none py-3">
+      <b class="text-center w-100">Unggah Bukti Transfer</b>
+    </div>
+      <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
+        <i class="fas fa-times"></i>
+      </a> -->
+      <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <div class="p-3 pt-0">
+      <div>
+        <a href="foto_bukti_transfer.html" class="btn rounded-16 p-3 w-100 mb-2" style="background: #F4F4F4; border: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" style="color: #EB5241;">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+            <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+          </svg>
+          <span>Foto Dari Kamera</span>
+        </a>
+        <a href="foto_bukti_transfer.html" class="btn rounded-16 p-3 w-100" style="background: #F4F4F4; border: none;">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="24" height="24"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" style="color: #EB5241;">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M15 8h.01" />
+              <path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" />
+              <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" />
+              <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
+            </svg>
+            Pilih Dari Galeri</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal start -->
+  <div class="modal-container modal fade" id="bottomModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <strong class="text-center">Pilih Metode Pembayaran</strong>
+
+      <div class="row g-3 mt-3">
+        <div class="col-12">
+          <a href="foto_bukti_transfer.html" class="btn rounded-16 btn-modal"
+            style="background: #F4F4F4; border: none;">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" style="color: #EB5241;">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              </svg>
+              Unggah Bukti Transfer</span>
+          </a>
+        </div>
+      </div>
+      <div class="row g-3 mt-1 mb-3">
+        <div class="col-12">
+          <a href="#" class="btn rounded-16 btn-modal" style="background: #F4F4F4; border: none;">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" style="color: #EB5241;">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 8h.01" />
+                <path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" />
+                <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" />
+                <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
+              </svg>
+              Pilih Dari Galeri</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+</body>
+<script>
+  function copyText(text) {
+    console.log(text)
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(text);
+  }
+
+</script>
+
+<script src="./dist/js/demo-theme.min.js"></script>
+<script src="./dist/js/tabler.min.js" defer></script>
+<script src="./dist/js/demo.min.js" defer></script>
+
+</html>

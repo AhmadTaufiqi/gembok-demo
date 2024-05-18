@@ -8,6 +8,19 @@
   --bs-font-work-sans: 'work sans';
 }
 
+.ml-1 {
+  margin-left: 1px;
+}
+.ml-2 {
+  margin-left: 2px;
+}
+.ml-3 {
+  margin-left: 3px;
+}
+.ml-4 {
+  margin-left: 4px;
+}
+
 body {
   font-family: 'work sans';
   background-color: #EFE9EA;
