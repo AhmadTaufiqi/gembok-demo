@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Blank page - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+  <title>Gembox | Metode Bayar</title>
   <!-- CSS files -->
   <link href="./dist/css/tabler.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
@@ -40,15 +40,41 @@
       <div class="col-1"></div>
     </div>
     <div class="p-3">
+      <div class="card rounded-16 mb-3" style="background: hsl(202, 100%, 64%, 15%); border: 1px solid #45BCFF;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-auto">
+              <span style="color: black;">
+                Selesaikan pembayaran dalam
+              </span>
+            </div>
+            <div class="col text-end">
+              <span class="badge rounded-16" style="background-color: #45BCFF;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M12 10l0 3l2 0" />
+                  <path d="M7 4l-2.75 2" />
+                  <path d="M17 4l2.75 2" />
+                </svg>
+                00:02:00
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- card-metode-pembayaran -->
       <div class="card border-none rounded-15 mb-3">
         <div class="card-body p-2">
           <div class="d-flex mt-2">
             <div class="col">
-              <span>metode pembayaran</span>
+              <span>Metode pembayaran</span>
             </div>
             <div class="col text-end">
-              <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button" aria-controls="modal_payments">
+              <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button"
+                aria-controls="modal_payments">
                 Lihat Semua
               </a>
             </div>
@@ -69,24 +95,26 @@
           </div>
           <div class="card bg-grey border-none rounded-15 my-3 p-3">
             <div class="d-flex align-items-center">
-              <b class="col-9">5128770209</b>
-              <a role="button" class="col-3 text-end" onclick="copyText('5128770209')">
+              <b class="col-9" id="textToCopy">5128770209</b>
+              <!-- <a role="button" class="col-3 text-end" onclick="copyText()">
                 <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
-              </a>
+              </a> -->
+              <button class="border-none" onclick="copyTextWithIcon()"><img src="./dist/img/assets/icon-copy.svg" alt="Salin" ></button>
             </div>
           </div>
           <span>Jumlah Transfer</span>
           <div class="card bg-grey border-none rounded-15 mt-1 p-3">
             <div class="d-flex align-items-center">
-              <b class="col-9">Rp. 500.000</b>
-              <a role="button" class="col-3 text-end" onclick="copyText('500000')">
+              <b class="col-9" id="textToCopy1">Rp. 500.000</b>
+              <!-- <a role="button" class="col-3 text-end" onclick="copyText('500000')">
                 <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
-              </a>
+              </a> -->
+              <button class="border-none" onclick="copyTextWithIcon()"><img src="./dist/img/assets/icon-copy.svg" alt="Salin" ></button>
             </div>
           </div>
-          <div class="bukti_pembayaran my-3">
+          <!-- <div class="bukti_pembayaran my-3">
             <img src="./dist/img/assets/images/struk.jpg" alt="">
-          </div>
+          </div> -->
           <div class="d-flex mt-3">
             <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom"
               class="btn btn-unggah text-center">
@@ -185,10 +213,11 @@
     aria-labelledby="offcanvasLabel" aria-modal="true" role="dialog">
     <div class="offcanvas-header border-none py-1">
     </div>
-      <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
+    <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
         <i class="fas fa-times"></i>
       </a> -->
-      <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
     <div class="p-3 pt-0">
       <div class="accordion" id="accordion-example">
         <div class="accordion-item">
@@ -215,7 +244,7 @@
                     <label for="bank_jateng"></label>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
         </div>
@@ -242,7 +271,7 @@
                     <label for="bank_jateng"></label>
                   </div>
                 </div>
-              </div>  
+              </div>
               <div class="row m-0 mb-2 align-items-center">
                 <div class="px-1 d-flex"
                   style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
@@ -257,7 +286,7 @@
                     <label for="bank_bri"></label>
                   </div>
                 </div>
-              </div>  
+              </div>
               <div class="row m-0 mb-2 align-items-center">
                 <div class="px-1 d-flex"
                   style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
@@ -272,7 +301,7 @@
                     <label for="bank_bri"></label>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
         </div>
@@ -312,13 +341,15 @@
     <div class="offcanvas-header border-none py-3">
       <b class="text-center w-100">Unggah Bukti Transfer</b>
     </div>
-      <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
+    <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
         <i class="fas fa-times"></i>
       </a> -->
-      <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
     <div class="p-3 pt-0">
       <div>
-        <a href="foto_bukti_transfer.html" class="btn rounded-16 p-3 w-100 mb-2" style="background: #F4F4F4; border: none;">
+        <a href="foto_bukti_transfer.html" class="btn rounded-16 p-3 w-100 mb-2"
+          style="background: #F4F4F4; border: none;">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="24" height="24"
             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
             stroke-linejoin="round" style="color: #EB5241;">
@@ -398,6 +429,25 @@
     navigator.clipboard.writeText(text);
   }
 
+</script>
+
+<script>
+  function copyTextWithIcon() {
+      var text = document.getElementById("textToCopy").innerText;
+      navigator.clipboard.writeText(text).then(function() {
+          alert("Teks telah disalin: " + text);
+      }, function(err) {
+          console.error('Gagal menyalin teks: ', err);
+      });
+  }
+  function copyTextWithIcon() {
+      var text = document.getElementById("textToCopy1").innerText;
+      navigator.clipboard.writeText(text).then(function() {
+          alert("Teks telah disalin: " + text);
+      }, function(err) {
+          console.error('Gagal menyalin teks: ', err);
+      });
+  }
 </script>
 
 <script src="./dist/js/demo-theme.min.js"></script>

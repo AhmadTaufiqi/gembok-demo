@@ -160,7 +160,9 @@
                     <div class="row align-items-center">
                       <div class="col text-truncate">
                         <div class="text-truncate strong mt-n1">Keterangan Pelanggaran</div>
-                        <span>Pelanggar Parkir kendaraan pada area dilarang parkir.</span>
+                        <div class="col">
+                          <span>Pelanggar Parkir kendaraan pada area dilarang parkir.</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,17 +187,62 @@
                       </div>
                       <div class="row mt-2 strong align-items-center">
                         <div class="col text-truncate">
-                          <div class="text-truncate mt-n1">Jl. Sidodadi Timur Jalan Dokter Cipt</div>
-                          <span class="text-muted">
-                            No.24, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232
-                          </span>
+                          <div class="text-truncate mt-n1">Jl. Sidodadi Timur Jalan Dokter Cipto</div>
+                          <div class="row">
+                            <div class="col">
+                              <span class="text-muted text-truncate">
+                                No.24, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232
+                              </span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="card rounded-16 mt-2 mb-0">
+                <div class="card rounded-16 mt-2 mb-5">
+                  <div class="card-body">
+                    <div class="row g-3">
+                      <div class="col">
+                        <div class="row g-3 align-items-center">
+                          <div class="col text-truncate">
+                            <div class="text-truncate mt-n1">Rincian Tagihan Denda Tilang</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <span>Jenis Kendaraan</span>
+                      </div>
+                      <div class="col-6 text-end">
+                        <span class="strong">Mobil</span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <span>Jenis Tilang</span>
+                      </div>
+                      <div class="col-6 text-end">
+                        <span class="strong">Gembok</span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <span>Total Denda</span>
+                      </div>
+                      <div class="col-6 text-end">
+                        <span class="strong" style="color: #EB5241;">Rp. 600.000</span>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card rounded-16 mt-5">
                   <div class="card-body">
 
                     <div class="row g-3 mt-0">
@@ -218,8 +265,11 @@
 
                     <div class="row g-3">
                       <div class="col-12">
-                        <a href="metode-bayar.html" class="btn rounded-16 text-white btn-bayar"
-                          style="background: #EB5241;">
+                        <!-- <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button" aria-controls="modal_payments">
+                          Lihat Semua
+                        </a> -->
+                        <a role="button" class="btn rounded-16 text-white btn-bayar" style="background: #EB5241;"
+                          data-bs-toggle="offcanvas" href="#offcanvasBottom" aria-controls="offcanvasBottom">
                           Bayar
                         </a>
                       </div>
@@ -227,10 +277,67 @@
 
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom m-3 rounded-16 fade" style="height:auto;" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas-header border-none py-3">
+      <b class="text-start w-100">Pilih Metode Bayar</b>
+    </div>
+
+    <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
+      <b class="text-start w-100">Transfer Bank</b>
+    </div>
+
+    <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
+    <div class="text-start">
+      <div>
+        <a href="metode-bayar.html" class="btn" style=" border: none;">
+          <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
+          <span>Bank Jateng</span>
+          <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </a>
+
+        <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
+          <b class="text-start w-100">Virtual Account</b>
+        </div>
+        <a href="#" class="btn" style=" border: none;">
+          <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
+          <span>Bank Jateng</span>
+          <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </a>
+
+        <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
+          <b class="text-start w-100">Lainnya</b>
+        </div>
+        <a href="#" class="btn" style=" border: none;">
+          <img class="p-3" src="dist/img/assets/qris.png" alt="bank_jateng">
+          <span>QRIS</span>
+          <svg style="margin-left: 197px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
