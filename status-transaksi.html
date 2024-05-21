@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Blank page - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+  <title>Gemobox | Status Transaksi</title>
   <!-- CSS files -->
   <link href="./dist/css/tabler.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
@@ -41,9 +41,9 @@
     </div>
     <div class="p-3 text-center">
       <div style="background-color: #E42915;width: 150px;height: 150px;border-radius: 10rem;display: inline-block;">
-        <img src="./dist/img/assets/images/loading_plane.gif" alt="" height="150" style="position: absolute;width: 250px;height: 150px;">
+        <img src="./dist/img/assets/images/loading_plane.gif" alt=""  style="position: absolute;width: 300px;height: 150px; display: flex; justify-content: center; align-items: center; margin-left: -10%;">
       </div>
-      <h6 class="bold mb-0" style="line-height: 1.4;">Mohon Bersabar Kamis Masih Memproses Transaksi Anda.</h6>
+      <h6 class="bold mb-0 mt-8" style="line-height: 1.4;">Mohon Bersabar Kamis Masih Memproses Transaksi Anda.</h6>
       <h6 class="text-muted" style="font-weight:400;line-height: 1.4;">Proses Paling Lambat 1 Jam</h6>
       <small class="red-theme">Belum Transfer?</small>
     </div>
@@ -59,6 +59,13 @@
     navigator.clipboard.writeText(text);
   }
 
+</script>
+
+<!-- buat pindah halaman -->
+<script>
+  setTimeout(function(){
+      window.location.href = "success-transaksi.html";
+  }, 5000); 
 </script>
 
 <script src="./dist/js/demo-theme.min.js"></script>

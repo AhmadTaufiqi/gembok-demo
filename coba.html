@@ -3,34 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Button</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan dengan file CSS untuk gaya tambahan jika dibutuhkan -->
+    <title>Pengalihan Halaman</title>
 </head>
 <body>
-    <div>
-        <p id="textToCopy">Teks yang akan disalin.</p>
-        <button onclick="copyText()">Salin Teks</button>
-        <button onclick="copyTextWithIcon()"><img src="dist/img/assets/bank-jateng.svg" alt="Salin"><span>Salin</span></button>
-    </div>
-
+    <h1>Halaman Ini Akan Dialihkan</h1>
+    
+    <!-- Tambahkan skrip JavaScript -->
     <script>
-        function copyText() {
-            var text = document.getElementById("textToCopy").innerText;
-            navigator.clipboard.writeText(text).then(function() {
-                alert("Teks telah disalin: " + text);
-            }, function(err) {
-                console.error('Gagal menyalin teks: ', err);
-            });
-        }
-
-        function copyTextWithIcon() {
-            var text = document.getElementById("textToCopy").innerText;
-            navigator.clipboard.writeText(text).then(function() {
-                alert("Teks telah disalin: " + text);
-            }, function(err) {
-                console.error('Gagal menyalin teks: ', err);
-            });
-        }
+        // Fungsi untuk mengalihkan ke halaman selanjutnya setelah 5 detik
+        setTimeout(function(){
+            window.location.href = "halaman_selanjutnya.html";
+        }, 5000); // Waktu dalam milidetik (misalnya 5000 milidetik = 5 detik)
     </script>
 </body>
 </html>
