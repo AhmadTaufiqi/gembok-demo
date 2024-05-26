@@ -14,6 +14,14 @@
   <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
   <link href="./dist/css/demo.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
+  rel="stylesheet">
   <style>
     @import url('https://rsms.me/inter/inter.css');
 
@@ -29,7 +37,7 @@
 
 <body>
   <div class="page">
-    <div class="row align-items-center">
+    <!-- <div class="row align-items-center">
       <div class="col-5 col-sm-4 col-md-2 col-xl py-3">
         <a href="index.html" style="color: black;">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
@@ -42,9 +50,17 @@
       <div class="col-7 col-sm-4 col-md-2 col-xl py-3">
         <strong>H 1234 DU</strong>
       </div>
+    </div> -->
+    <div class="position_bar">
+      <a class="col-1 btn_back" href="index.html">
+        <i class="fas fa-angle-left"></i>
+      </a>
+      <div class="col text-center bold">
+        H 1234 DU
+      </div>
+      <div class="col-1"></div>
     </div>
-    <div class="page-body">
-      <div class="container-xl">
+    <div class="p-3">
         <div class="input-icon mb-3">
           <input type="text" value="" class="form-control rounded-16" style="height: 43px; border-color: #EB5241;"
             placeholder="Cari ID Tilang">
@@ -72,7 +88,7 @@
               </div>
             </div>
             <div class="content-container">
-              <div class="content" id="content1">
+              <div id="content1">
                 <div class="row row-cards">
                   <div class="col-md-4 col-sm-6">
                     <div class="card">
@@ -90,27 +106,31 @@
                           <span class="badge rounded-16" style="background: #EB5241;">Baru</span>
                         </div>
                       </div>
-                      <div class="card-body">
+                      <div class="card-body px-3">
                         <div class="row align-items-center">
                           <div class="col-auto">
                             <span class="avatar" style="background-image: url(dist/img/assets/gembok-1.png)"></span>
                           </div>
                           <div class="col">
-                            <div class="card-title small">Gembok</div>
-                            <div class="card-subtitle small">Keterangan Pelanggaran :</div>
-                            <p class="small strong"
-                              style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">Lorem ipsum dolor
+                            <span class="card-title">Gembok</span>
+                            <div class="card-subtitle mb-1">Keterangan Pelanggaran :</div>
+                            <div class="d-flex text-end">
+                              <h4 class="col mb-0"
+                              style="white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-weight: 400;">Lorem ipsum dolor
                               sit amet consectetur adipisicing
-                              elit. Dolore fugit accusamus corporis?</p>
-                            <div class="card-subtitle small" style="margin-left: 80%;">Denda</div>
-                            <div class="card-subtitle small" style="color: #EB5241; margin-left: 70%;">Rp. 500.000</div>
+                              elit. Dolore fugit accusamus corporis?</h4>
+                              <div class="col-4 px-0">
+                                <span>Denda</span>
+                                <h3 class="mb-0" style="color: #EB5241;">Rp. 500.000</h3>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div class="card-footer">
                         <div class="row align-items-center">
                           <div class="col-6">
-                            <div class="small"><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
+                            <div><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
                           </div>
                           <div class="col-6">
                             <a href="#" style="color: black; float: right;">
@@ -136,7 +156,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </body>
