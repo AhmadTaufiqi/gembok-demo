@@ -14,6 +14,14 @@
   <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
   <link href="./dist/css/demo.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler.css" rel="stylesheet" />
+  <link href="./dist/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
+    rel="stylesheet">
+
   <style>
     @import url('https://rsms.me/inter/inter.css');
 
@@ -29,7 +37,7 @@
 
 <body>
   <div class="page">
-    <div class="row align-items-center">
+    <!-- <div class="row align-items-center">
       <div class="col-5 col-sm-4 col-md-2 col-xl py-3">
         <a href="home.html" style="color: black;">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
@@ -42,9 +50,18 @@
       <div class="col-7 col-sm-4 col-md-2 col-xl py-3">
         <strong>Tagihan Tilang</strong>
       </div>
+    </div> -->
+    <div class="position_bar">
+      <a class="col-1 btn_back" href="home.html">
+        <i class="fas fa-angle-left"></i>
+      </a>
+      <div class="col text-center bold">
+        Pilih Metode Pembayaran
+      </div>
+      <div class="col-1"></div>
     </div>
-    <div class="p-2">
-      <div class="col-12">
+    <div class="p-3">
+      <div class="col-12 mb-3">
         <div class="card rounded-16" style="background: #FFE0E0; border: 1px solid #EB5241;">
           <div class="card-body">
             <div class="row">
@@ -70,215 +87,211 @@
           </div>
         </div>
       </div>
-    </div>
     <!-- card-detail-tilang -->
-    <div class="page-body">
-      <div class="container-xl">
-        <div class="row row-cards">
-          <div class="col-md-6">
-            <div class="row row-cards">
-              <div class="col-12">
-                <div class="card rounded-16">
-                  <div class="card-body">
-                    <div class="row g-3">
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center">
-                          <div class="col text-truncate">
-                            <div class="text-muted text-truncate mt-n1">Tanggal Pelanggaran</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center float-end">
-                          <div class="col text-truncate ">
-                            <div class="text-reset d-block text-truncate h4">12/09/2024 12:12</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <div class="row align-items-center">
-                          <div class="col detail-nopol">
-                            <div class="text-muted mt-n1">No. Kendaraan</div>
-                            <div class="h1">H 1234 DU</div>
-                            <div class=" mt-n1" style="margin-top: -10px;"><span class="text-muted">ID BILLING:
-                              </span>2405091.1181 CNCS</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <img class="rounded-16" src="dist/img/assets/images/parking-car.jpg" alt="">
-                      </div>
-                    </div>
-
-                    <!-- <div class="row g-3 mt-0">
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center">
-                          <div class="col text-truncate">
-                            <div class="text-reset d-block text-truncate h1 mt-3">Bayar Denda</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center float-end">
-                          <div class="col text-truncate ">
-                            <div class="text-reset d-block text-truncate h3">12/09/2024</div>
-                            <div class=" d-block text-truncate h3" style="color: #EB5241;">RP. 600.000</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-
-                    <!-- <div class="row g-3">
-                      <div class="col-12">
-                        <a href="metode-bayar.html" class="btn rounded-16 text-white btn-bayar"
-                          style="background: #EB5241;">
-                          Bayar
-                        </a>
-                      </div>
-                    </div> -->
-
-                  </div>
-                </div>
-
-                <div class="card rounded-16 mt-2">
-                  <div class="card-header">
-                    <div>
-                      <div class="row align-items-center">
-                        <div class="col-auto">
-                          <span class="avatar"
-                            style="background-image: url(./static/avatars/003m.jpg); border-radius: 50%;"></span>
-                        </div>
-                        <div class="col">
-                          <div class="card-subtitle">Petugas</div>
-                          <div class="card-title">Lukman Wijayanto</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="row align-items-center">
-                      <div class="col text-truncate">
-                        <div class="text-truncate strong mt-n1">Keterangan Pelanggaran</div>
-                        <div class="col">
-                          <span>Pelanggar Parkir kendaraan pada area dilarang parkir.</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card rounded-16 mt-2">
-                  <div class="card-body">
-                    <div class="row g-3">
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center">
-                          <div class="col text-truncate">
-                            <div class="text-truncate mt-n1">Lokasi Pelanggaran</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12">
-                        <iframe class="rounded-16"
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.169584411755!2d110.43279337442077!3d-6.989296568447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sid!2sid!4v1716010480353!5m2!1sid!2sid"
-                          width="360" height="230" style="border:0;" allowfullscreen="" loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                      <div class="row mt-2 strong align-items-center">
+      <div class="row row-cards justify-content-center">
+        <div class="col-md-6">
+          <div class="row row-cards">
+            <div class="col-12">
+              <div class="card rounded-16">
+                <div class="card-body">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center">
                         <div class="col text-truncate">
-                          <div class="text-truncate mt-n1">Jl. Sidodadi Timur Jalan Dokter Cipto</div>
-                          <div class="row">
-                            <div class="col">
-                              <span class="text-muted text-truncate">
-                                No.24, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232
-                              </span>
-                            </div>
-                          </div>
+                          <div class="text-muted text-truncate mt-n1">Tanggal Pelanggaran</div>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center float-end">
+                        <div class="col text-truncate ">
+                          <div class="text-reset d-block text-truncate h4">12/09/2024 12:12</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="row align-items-center">
+                        <div class="col detail-nopol">
+                          <div class="text-muted mt-n1">No. Kendaraan</div>
+                          <div class="h1">H 1234 DU</div>
+                          <div class=" mt-n1" style="margin-top: -10px;"><span class="text-muted">ID BILLING:
+                            </span>2405091.1181 CNCS</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <img class="rounded-16" src="dist/img/assets/images/parking-car.jpg" alt="">
                     </div>
                   </div>
-                </div>
 
-                <div class="card rounded-16 mt-2 mb-5">
-                  <div class="card-body">
-                    <div class="row g-3">
-                      <div class="col">
-                        <div class="row g-3 align-items-center">
-                          <div class="col text-truncate">
-                            <div class="text-truncate mt-n1">Rincian Tagihan Denda Tilang</div>
-                          </div>
+                  <!-- <div class="row g-3 mt-0">
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center">
+                        <div class="col text-truncate">
+                          <div class="text-reset d-block text-truncate h1 mt-3">Bayar Denda</div>
                         </div>
                       </div>
                     </div>
-                    <div class="row mt-3">
-                      <div class="col-6">
-                        <span>Jenis Kendaraan</span>
-                      </div>
-                      <div class="col-6 text-end">
-                        <span class="strong">Mobil</span>
-                      </div>
-                      <hr>
-                    </div>
-                    <div class="row">
-                      <div class="col-6">
-                        <span>Jenis Tilang</span>
-                      </div>
-                      <div class="col-6 text-end">
-                        <span class="strong">Gembok</span>
-                      </div>
-                      <hr>
-                    </div>
-                    <div class="row">
-                      <div class="col-6">
-                        <span>Total Denda</span>
-                      </div>
-                      <div class="col-6 text-end">
-                        <span class="strong" style="color: #EB5241;">Rp. 600.000</span>
-                      </div>
-                      <hr>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card rounded-16 mt-5">
-                  <div class="card-body">
-
-                    <div class="row g-3 mt-0">
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center">
-                          <div class="col text-truncate">
-                            <div class="text-reset d-block text-truncate h1 mt-3">Bayar Denda</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="row g-3 align-items-center float-end">
-                          <div class="col text-truncate ">
-                            <div class="text-reset d-block text-truncate h3">12/09/2024</div>
-                            <div class=" d-block text-truncate h3" style="color: #EB5241;">RP. 600.000</div>
-                          </div>
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center float-end">
+                        <div class="col text-truncate ">
+                          <div class="text-reset d-block text-truncate h3">12/09/2024</div>
+                          <div class=" d-block text-truncate h3" style="color: #EB5241;">RP. 600.000</div>
                         </div>
                       </div>
                     </div>
+                  </div> -->
 
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <!-- <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button" aria-controls="modal_payments">
-                          Lihat Semua
-                        </a> -->
-                        <a role="button" class="btn rounded-16 text-white btn-bayar" style="background: #EB5241;"
-                          data-bs-toggle="offcanvas" href="#offcanvasBottom" aria-controls="offcanvasBottom">
-                          Bayar
-                        </a>
-                      </div>
+                  <!-- <div class="row g-3">
+                    <div class="col-12">
+                      <a href="metode-bayar.html" class="btn rounded-16 text-white btn-bayar"
+                        style="background: #EB5241;">
+                        Bayar
+                      </a>
                     </div>
+                  </div> -->
 
-                  </div>
                 </div>
-
               </div>
+
+              <div class="card rounded-16 mt-2">
+                <div class="card-header">
+                  <div>
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="avatar"
+                          style="background-image: url(./static/avatars/003m.jpg); border-radius: 50%;"></span>
+                      </div>
+                      <div class="col">
+                        <div class="card-subtitle">Petugas</div>
+                        <div class="card-title">Lukman Wijayanto</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col text-truncate">
+                      <div class="text-truncate strong mt-n1">Keterangan Pelanggaran</div>
+                      <div class="col">
+                        <span>Pelanggar Parkir kendaraan pada area dilarang parkir.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card rounded-16 mt-2">
+                <div class="card-body">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center">
+                        <div class="col text-truncate">
+                          <div class="text-truncate mt-n1">Lokasi Pelanggaran</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <iframe class="rounded-16"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.169584411755!2d110.43279337442077!3d-6.989296568447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sid!2sid!4v1716010480353!5m2!1sid!2sid"
+                        height="230" style="border:none; width:100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="row mt-2 strong align-items-center">
+                      <div class="col text-truncate">
+                        <div class="text-truncate mt-n1">Jl. Sidodadi Timur Jalan Dokter Cipto</div>
+                        <div class="row">
+                          <div class="col">
+                            <span class="text-muted text-truncate">
+                              No.24, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card rounded-16 mt-2 mb-5">
+                <div class="card-body">
+                  <div class="row g-3">
+                    <div class="col">
+                      <div class="row g-3 align-items-center">
+                        <div class="col text-truncate">
+                          <div class="text-truncate mt-n1">Rincian Tagihan Denda Tilang</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <span>Jenis Kendaraan</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span class="strong">Mobil</span>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <span>Jenis Tilang</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span class="strong">Gembok</span>
+                    </div>
+                    <hr>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <span>Total Denda</span>
+                    </div>
+                    <div class="col-6 text-end">
+                      <span class="strong" style="color: #EB5241;">Rp. 600.000</span>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card rounded-16 mt-5">
+                <div class="card-body">
+
+                  <div class="row g-3 mt-0">
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center">
+                        <div class="col text-truncate">
+                          <div class="text-reset d-block text-truncate h1 mt-3">Bayar Denda</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row g-3 align-items-center float-end">
+                        <div class="col text-truncate ">
+                          <div class="text-reset d-block text-truncate h3">12/09/2024</div>
+                          <div class=" d-block text-truncate h3" style="color: #EB5241;">RP. 600.000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <!-- <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#modal_payments" role="button" aria-controls="modal_payments">
+                        Lihat Semua
+                      </a> -->
+                      <a role="button" class="btn rounded-16 text-white btn-bayar" style="background: #EB5241;"
+                        data-bs-toggle="offcanvas" href="#offcanvasBottom" aria-controls="offcanvasBottom">
+                        Bayar
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

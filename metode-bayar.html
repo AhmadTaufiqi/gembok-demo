@@ -42,14 +42,14 @@
     <div class="p-3">
       <div class="card rounded-16 mb-3" style="background: hsl(202, 100%, 64%, 15%); border: 1px solid #45BCFF;">
         <div class="card-body">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-auto">
               <span style="color: black;">
                 Selesaikan pembayaran dalam
               </span>
             </div>
             <div class="col text-end">
-              <span class="badge rounded-16" style="background-color: #45BCFF;">
+              <div class="d-inline-flex badge rounded-16" style="background-color: #45BCFF;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
@@ -59,8 +59,10 @@
                   <path d="M7 4l-2.75 2" />
                   <path d="M17 4l2.75 2" />
                 </svg>
-                00:02:00
-              </span>
+                <span style="line-height: normal;">
+                  00:02:00
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -94,22 +96,20 @@
             </div>
           </div>
           <div class="card bg-grey border-none rounded-15 my-3 p-3">
-            <div class="d-flex align-items-center">
-              <b class="col-9" id="textToCopy">5128770209</b>
-              <!-- <a role="button" class="col-3 text-end" onclick="copyText()">
-                <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
-              </a> -->
-              <button class="border-none" onclick="copyTextWithIcon()"><img src="./dist/img/assets/icon-copy.svg" alt="Salin" ></button>
+            <div class="d-flex align-items-center justify-content-between">
+              <b class="col-9 textToCopy">5128770209</b>
+              <a role="button" class="p-1" onclick="copyText('5128770209')">
+                <img src="./dist/img/assets/icon-copy.svg" alt="">
+              </a>
             </div>
           </div>
           <span>Jumlah Transfer</span>
           <div class="card bg-grey border-none rounded-15 mt-1 p-3">
-            <div class="d-flex align-items-center">
-              <b class="col-9" id="textToCopy1">Rp. 500.000</b>
-              <!-- <a role="button" class="col-3 text-end" onclick="copyText('500000')">
-                <img src="./dist/img/assets/icon-copy.svg" alt="" height="18px">
-              </a> -->
-              <button class="border-none" onclick="copyTextWithIcon()"><img src="./dist/img/assets/icon-copy.svg" alt="Salin" ></button>
+            <div class="d-flex align-items-center justify-content-between">
+              <b class="col-9 textToCopy">Rp. 500.000</b>
+              <a class="p-1" role="button" onclick="copyText('500000')">
+                <img src="./dist/img/assets/icon-copy.svg">
+              </a>
             </div>
           </div>
           <!-- <div class="bukti_pembayaran my-3">
@@ -234,7 +234,7 @@
           </svg>
           <span>Foto Dari Kamera</span>
         </a>
-        <a href="foto_bukti_transfer.html" class="btn rounded-16 p-3 w-100" style="background: #F4F4F4; border: none;">
+        <a role="button" id="input_gallery" class="btn rounded-16 p-3 w-100" style="background: #F4F4F4; border: none;">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="24" height="24"
               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -245,6 +245,7 @@
               <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" />
               <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" />
             </svg>
+            <input type="file" hidden accept="image/*" capture="filesystem">
             Pilih Dari Galeri</span>
         </a>
       </div>
@@ -356,32 +357,26 @@
     console.log(text)
 
     // Copy the text inside the text field
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text).then(function () {
+      alert("Teks telah disalin: " + text);
+    }, function (err) {
+      console.error('Gagal menyalin teks: ', err);
+    });
   }
 
-</script>
-
-<script>
-  function copyTextWithIcon() {
-      var text = document.getElementById("textToCopy").innerText;
-      navigator.clipboard.writeText(text).then(function() {
-          alert("Teks telah disalin: " + text);
-      }, function(err) {
-          console.error('Gagal menyalin teks: ', err);
-      });
-  }
-  function copyTextWithIcon() {
-      var text = document.getElementById("textToCopy1").innerText;
-      navigator.clipboard.writeText(text).then(function() {
-          alert("Teks telah disalin: " + text);
-      }, function(err) {
-          console.error('Gagal menyalin teks: ', err);
-      });
-  }
 </script>
 
 <script src="./dist/js/demo-theme.min.js"></script>
+<script src="./dist/js/jquery.min.js"></script>
 <script src="./dist/js/tabler.min.js" defer></script>
 <script src="./dist/js/demo.min.js" defer></script>
+
+<script>
+  $('#input_gallery').on('click', function () {
+    var fileinput = $(this + ' input[type="file"]')[0]
+    console.log(fileinput);
+    fileinput.click()
+  })
+</script>
 
 </html>
