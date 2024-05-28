@@ -91,7 +91,7 @@
               </div>
             </div>
 
-            
+
 
           </div>
         </div>
@@ -115,59 +115,40 @@
             <div class="p-3 pt-0">
               <div>
                 <img class="p-3" src="dist/img/assets/images/icon-widget/1-qris.png" alt="1qris">
-                <span class="ms-3">1. Screenshot kode qR diatas.</span>
+                <span class="ms-3">1. Screenshot kode QR diatas.</span>
               </div>
               <div>
-                <img class="p-3" src="dist/img/assets/images/icon-widget/2-qris.png" alt="2qris">
-                <span class="ms-3">2. Buka Platform pembayaran yang ingin kamu gunakan. (BCA, GOPAY, Shopeepay, dll)</span>
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img class="p-3" src="dist/img/assets/images/icon-widget/2-qris.png" alt="2qris">
+                    </div>
+                    <div class="col-9">
+                      <p class="small lh-base ms-3">2. Buka Platform pembayaran yang ingin kamu gunakan. (BCA, GOPAY,
+                        Shopeepay, dll)</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
-                <img class="p-3" src="dist/img/assets/images/icon-widget/3-qris.png" alt="3qris">
-                <span class="ms-3">3. Unggah screenshot foto kode QR tadi ke aplikasi pilihanmu dan konfirmasi pembayaranmu.</span>
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <img class="p-3" src="dist/img/assets/images/icon-widget/3-qris.png" alt="3qris">
+                    </div>
+                    <div class="col-9">
+                      <span class="small lh-base ms-3">3. Unggah screenshot foto kode QR tadi ke aplikasi pilihanmu dan
+                        konfirmasi
+                        pembayaranmu.</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <img class="p-3" src="dist/img/assets/images/icon-widget/4-qris.png" alt="4qris">
-                <span class="ms-3">4. Upload Bukti pembayaran kamu untuk mempercepat proses verifikasi pembayaran.</span>
+                <span class="ms-3">4. Upload Bukti pembayaran kamu untuk mempercepat proses verifikasi
+                  pembayaran.</span>
               </div>
-              <!-- <div>
-                <span>5. Konfirmasi dan Ambil Struk:</span>
-                <li class="ms-3">Periksa detail transaksi, konfirmasikan, dan jangan lupa mengambil struk transaksi
-                  sebagai bukti.</li>
-              </div>
-              <b>Transfer Melalui M-Banking Bank Jateng:</b>
-              <div>
-                <span>1. Buka Aplikasi M-Banking:</span>
-                <li class="ms-3">Buka aplikasi M-Banking Bank Jateng di ponsel Anda.</li>
-              </div>
-              <div>
-                <span>2. Masuk ke Akun Anda:</span>
-                <li class="ms-3">Masuk ke akun M-Banking dengan menggunakan kredensial yang benar.</li>
-              </div>
-              <div>
-                <span>3. Pilih "Transfer":</span>
-                <li class="ms-3">Di menu utama, pilih opsi "Transfer."</li>
-              </div>
-              <div>
-                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
-                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
-              </div>
-              <b>Transfer Melalui Internet Banking Bank Jateng:</b>
-              <div>
-                <span>1. Buka Situs Internet Banking:</span>
-                <li class="ms-3">Kunjungi situs web Internet Banking Bank Jateng.</li>
-              </div>
-              <div>
-                <span>2. Masuk ke Akun Anda:</span>
-                <li class="ms-3">Masuk ke akun Internet Banking dengan menggunakan kredensial yang benar.</li>
-              </div>
-              <div>
-                <span>3. Pilih "Transfer":</span>
-                <li class="ms-3">Di dashboard, pilih opsi "Transfer."</li>
-              </div>
-              <div>
-                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
-                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
-              </div> -->
             </div>
           </div>
         </div>
@@ -190,9 +171,6 @@
     <div class="offcanvas-header border-none py-3">
       <b class="text-center w-100">Unggah Bukti Transfer</b>
     </div>
-    <!-- <a class="btn-modal-custom" style="position: absolute; right: 0; padding: 15px; top: -50px;font-size: 20px;" data-bs-dismiss="offcanvas" aria-label="close">
-        <i class="fas fa-times"></i>
-      </a> -->
     <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
       style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
     <div class="p-3 pt-0">
@@ -239,20 +217,20 @@
 
 <script>
   function copyTextWithIcon() {
-      var text = document.getElementById("textToCopy").innerText;
-      navigator.clipboard.writeText(text).then(function() {
-          alert("Teks telah disalin: " + text);
-      }, function(err) {
-          console.error('Gagal menyalin teks: ', err);
-      });
+    var text = document.getElementById("textToCopy").innerText;
+    navigator.clipboard.writeText(text).then(function () {
+      alert("Teks telah disalin: " + text);
+    }, function (err) {
+      console.error('Gagal menyalin teks: ', err);
+    });
   }
   function copyTextWithIcon() {
-      var text = document.getElementById("textToCopy1").innerText;
-      navigator.clipboard.writeText(text).then(function() {
-          alert("Teks telah disalin: " + text);
-      }, function(err) {
-          console.error('Gagal menyalin teks: ', err);
-      });
+    var text = document.getElementById("textToCopy1").innerText;
+    navigator.clipboard.writeText(text).then(function () {
+      alert("Teks telah disalin: " + text);
+    }, function (err) {
+      console.error('Gagal menyalin teks: ', err);
+    });
   }
 </script>
 
