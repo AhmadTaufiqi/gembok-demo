@@ -293,6 +293,7 @@ margin-top:-2rem !important;
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #fff;
+  background-position-y:-2rem;
 }
 
 .accordion-item{
