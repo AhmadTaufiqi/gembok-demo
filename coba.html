@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengalihan Halaman</title>
+    <title>Countdown Timer</title>
+    <style>
+        #timer {
+            font-size: 48px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-    <h1>Halaman Ini Akan Dialihkan</h1>
-    
-    <!-- Tambahkan skrip JavaScript -->
+    <div id="timer">0:02:00</div>
+
     <script>
-        // Fungsi untuk mengalihkan ke halaman selanjutnya setelah 5 detik
-        setTimeout(function(){
-            window.location.href = "halaman_selanjutnya.html";
-        }, 5000); // Waktu dalam milidetik (misalnya 5000 milidetik = 5 detik)
+        // Set the initial time in seconds
+        let time = 120; // 2 minutes
+
+        // Function to start the countdown
+        function startCountdown() {
+            const timerElement = document.getElementById('timer');
+
+            const countdown = setInterval(() => {
+                // Calculate minutes and seconds
+                const minutes = Math.floor(time / 60);
+                const seconds = time % 60;
+
+                // Format the time as "0:MM:SS"
+                const formattedTime = `0:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+                // Display the time
+                timerElement.textContent = formattedTime;
+
+                // Decrement the time by 1 second
+                time--;
+
+                // Stop the countdown when the time reaches 0
+                if (time < 0) {
+                    clearInterval(countdown);
+                }
+            }, 1000);
+        }
+
+        // Start the countdown
+        startCountdown();
     </script>
 </body>
 </html>
