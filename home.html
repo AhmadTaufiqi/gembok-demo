@@ -15,13 +15,13 @@
   <link href="./dist/css/demo.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler.css" rel="stylesheet" />
   <link rel="stylesheet" href="./dist/css/style.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
+    rel="stylesheet">
   <style>
     @import url('https://rsms.me/inter/inter.css');
 
@@ -36,18 +36,20 @@
 </head>
 
 <body>
-  <div class="page">
-    <div class="position_bar">
-      <a class="col-1 btn_back" href="index.html">
-        <i class="fas fa-angle-left"></i>
-      </a>
-      <div class="col text-center bold">
-        H 1234 DU
+  <div class="page ">
+    <div class="position_bar flex-wrap pb-1">
+      <div class="col-12 d-flex align-items-center mb-3">
+        <a class="col-1 btn_back" href="index.html">
+          <i class="fas fa-angle-left"></i>
+        </a>
+        <div class="col text-center bold">
+          H 1234 DU
+        </div>
+        <div class="col-1"></div>
       </div>
-      <div class="col-1"></div>
-    </div>
-    <div class="p-3">
-        <div class="input-icon mb-3">
+
+      <div class="col-12">
+        <div class="input-icon mb-2">
           <input type="text" value="" class="form-control rounded-16" style="height: 43px; border-color: #EB5241;"
             placeholder="Cari ID Tilang">
           <span class="input-icon-addon">
@@ -60,93 +62,157 @@
             </svg>
           </span>
         </div>
-
-        <div class="row row-cards">
-          <div class="col-md-4">
-            <div class="tabs-container">
-              <div class="tabs-wrapper">
-                <div class="tab" onclick="changeTab(1)">Semua</div>
-                <div class="tab" onclick="changeTab(2)">Belum Dibayar</div>
-                <div class="tab" onclick="changeTab(3)">Menunggu Transfer</div>
-                <div class="tab" onclick="changeTab(4)">Sudah Dibayar</div>
-                <div class="tab" onclick="changeTab(5)">Selesai</div>
-                <!-- <div class="tab" onclick="changeTab(6)">Tab 6</div> -->
-              </div>
-            </div>
-            <div class="content-container">
-              <div id="content1">
-                <div class="row row-cards">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="card">
-                      <div class="card-header" style="border-bottom: none;">
-                        <div>
-                          <div class="row">
-                            <div class="col">
-                              <div class="small strong">ID #H6869tf13092023
-                              </div>
-                              <div class="card-subtitle small">13/09/2023 12:32</div>
-                            </div>
+      </div>
+      <div class="col-12">
+        <div class="tabs-container">
+          <div class="tabs-wrapper">
+            <div class="tab" onclick="changeTab(1)">Semua</div>
+            <div class="tab" onclick="changeTab(2)">Belum Dibayar</div>
+            <div class="tab" onclick="changeTab(3)">Menunggu Transfer</div>
+            <div class="tab" onclick="changeTab(4)">Sudah Dibayar</div>
+            <div class="tab" onclick="changeTab(5)">Selesai</div>
+            <!-- <div class="tab" onclick="changeTab(6)">Tab 6</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-0 row-cards">
+      <div class="col-md-6 px-0">
+        <div class="content-container mt-3">
+          <div class="content p-1" id="content1">
+            <!-- baris 2 content 1 -->
+            <div class="row row-cards mb-3">
+              <div class="col-md-12 col-sm-6">
+                <div class="card">
+                  <div class="card-header pb-2" style="border-bottom: none;">
+                    <div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="small strong">ID #H6869tf13092023
                           </div>
-                        </div>
-                        <div class="card-actions">
-                          <span class="badge rounded-16" style="background: #EB5241;">Baru</span>
-                        </div>
-                      </div>
-                      <div class="card-body px-3">
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-                            <span class="avatar" style="background-image: url(dist/img/assets/gembok-1.png)"></span>
-                          </div>
-                          <div class="col">
-                            <span class="card-title">Gembok</span>
-                            <div class="card-subtitle mb-1">Keterangan Pelanggaran :</div>
-                            <div class="d-flex text-end">
-                              <h4 class="col mb-0"
-                              style="white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-weight: 400;">Lorem ipsum dolor
-                              sit amet consectetur adipisicing
-                              elit. Dolore fugit accusamus corporis?</h4>
-                              <div class="col-4 px-0">
-                                <span>Denda</span>
-                                <h3 class="mb-0" style="color: #EB5241;">Rp. 500.000</h3>
-                              </div>
-                            </div>
-                          </div>
+                          <div class="card-subtitle small">13/09/2023 12:32</div>
                         </div>
                       </div>
-                      <div class="card-footer">
-                        <div class="row align-items-center">
-                          <div class="col-6">
-                            <div><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
-                          </div>
-                          <div class="col-6">
-                            <a href="#" style="color: black; float: right;">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
-                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M9 6l6 6l-6 6" />
-                              </svg>
-                            </a>
+                    </div>
+                    <div class="card-actions">
+                      <span class="badge rounded-16" style="background: #EB5241;">Baru</span>
+                    </div>
+                  </div>
+                  <div class="py-2 px-3">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="avatar" style="background-image: url(dist/img/assets/gembok-1.png)"></span>
+                      </div>
+                      <div class="col">
+                        <span class="card-title">Gembok</span>
+                        <div class="card-subtitle mb-1">Keterangan Pelanggaran :</div>
+                        <div class="d-flex text-end">
+                          <h4 class="col mb-0"
+                            style="white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-weight: 400;">
+                            Lorem ipsum dolor
+                            sit amet consectetur adipisicing
+                            elit. Dolore fugit accusamus corporis?</h4>
+                          <div class="col-4 px-0">
+                            <span>Denda</span>
+                            <h3 class="mb-0" style="color: #EB5241;">Rp. 500.000</h3>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="card-footer">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <div><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" style="color: black; float: right;">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 6l6 6l-6 6" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="content" id="content2">Konten Tab 2</div>
-              <div class="content" id="content3">Konten Tab 3</div>
-              <div class="content" id="content4">Konten Tab 4</div>
-              <div class="content" id="content5">Konten Tab 5</div>
-              <div class="content" id="content6">Konten Tab 6</div>
+            </div>
+            <!-- baris 2 content 1 -->
+            <div class="row row-cards mb-3">
+              <div class="col-md-12 col-sm-6">
+                <div class="card">
+                  <div class="card-header pb-2" style="border-bottom: none;">
+                    <div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="small strong">ID #H6869tf13092023
+                          </div>
+                          <div class="card-subtitle small">13/09/2023 12:32</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-actions">
+                      <span class="badge rounded-16" style="background: #EB5241;">Baru</span>
+                    </div>
+                  </div>
+                  <div class="py-2 px-3">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <span class="avatar" style="background-image: url(dist/img/assets/gembok-1.png)"></span>
+                      </div>
+                      <div class="col">
+                        <span class="card-title">Gembok</span>
+                        <div class="card-subtitle mb-1">Keterangan Pelanggaran :</div>
+                        <div class="d-flex text-end">
+                          <h4 class="col mb-0"
+                            style="white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-weight: 400;">
+                            Lorem ipsum dolor
+                            sit amet consectetur adipisicing
+                            elit. Dolore fugit accusamus corporis?</h4>
+                          <div class="col-4 px-0">
+                            <span>Denda</span>
+                            <h3 class="mb-0" style="color: #EB5241;">Rp. 500.000</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <div><a href="detail-tilang.html" style="color: #000;">Lihat Detail</a></div>
+                      </div>
+                      <div class="col-6">
+                        <a href="#" style="color: black; float: right;">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 6l6 6l-6 6" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="content" id="content2">Konten Tab 2</div>
+          <div class="content" id="content3">Konten Tab 3</div>
+          <div class="content" id="content4">Konten Tab 4</div>
+          <div class="content" id="content5">Konten Tab 5</div>
+          <div class="content" id="content6">Konten Tab 6</div>
         </div>
+      </div>
     </div>
   </div>
 </body>
 <script>
-    changeTab(1)
+  changeTab(1)
   function changeTab(tabNumber) {
     // Hide all content elements
     const contentElements = document.querySelectorAll('.content');
