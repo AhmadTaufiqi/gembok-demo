@@ -3,48 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+    <title>Stacked Cards</title>
     <style>
-        #timer {
-            font-size: 48px;
-            font-family: 'Courier New', Courier, monospace;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            height: 200vh; /* Mengatur tinggi halaman untuk memberikan ruang scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: absolute;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .card:nth-child(1) {
+            top: 30%;
+            z-index: 3;
+        }
+        .card:nth-child(2) {
+            top: 40%;
+            z-index: 2;
+        }
+        .card:nth-child(3) {
+            top: 50%;
+            z-index: 1;
+            position: fixed; /* Card paling bawah tetap di tempat saat scrolling */
         }
     </style>
 </head>
 <body>
-    <div id="timer">0:02:00</div>
-
-    <script>
-        // Set the initial time in seconds
-        let time = 120; // 2 minutes
-
-        // Function to start the countdown
-        function startCountdown() {
-            const timerElement = document.getElementById('timer');
-
-            const countdown = setInterval(() => {
-                // Calculate minutes and seconds
-                const minutes = Math.floor(time / 60);
-                const seconds = time % 60;
-
-                // Format the time as "0:MM:SS"
-                const formattedTime = `0:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-
-                // Display the time
-                timerElement.textContent = formattedTime;
-
-                // Decrement the time by 1 second
-                time--;
-
-                // Stop the countdown when the time reaches 0
-                if (time < 0) {
-                    clearInterval(countdown);
-                }
-            }, 1000);
-        }
-
-        // Start the countdown
-        startCountdown();
-    </script>
+    <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
 </body>
 </html>

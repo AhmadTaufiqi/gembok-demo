@@ -318,3 +318,12 @@ margin-top:-2rem !important;
   flex-direction: column;
   justify-content: center;
 }
+
+.badge-selesai {
+  background: hsl(112, 100%, 63%, 20%);
+  color: #76C03C;
+}
+
+.badge-baru {
+  background: #EB5241;
+}
