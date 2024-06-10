@@ -29,166 +29,168 @@
 </head>
 
 <body>
-  <div class="page">
-    <div class="position_bar">
-      <a class="col-1 btn_back" href="detail-tilang.html">
-        <i class="fas fa-angle-left"></i>
-      </a>
-      <div class="col text-center bold">
-        Pilih Metode Pembayaran
+  <div class="page justify-content-between">
+    <div class="scroll-contentbox">
+      <div class="position_bar">
+        <a class="col-1 btn_back" href="detail-tilang.html">
+          <i class="fas fa-angle-left"></i>
+        </a>
+        <div class="col text-center bold">
+          Pilih Metode Pembayaran
+        </div>
+        <div class="col-1"></div>
       </div>
-      <div class="col-1"></div>
-    </div>
-    <div class="p-3">
-      <div class="card rounded-16 mb-3" style="background: hsl(202, 100%, 64%, 15%); border: 1px solid #45BCFF;">
-        <div class="card-body">
-          <div class="row align-items-center">
-            <div class="col-auto">
-              <span style="color: black;">
-                Selesaikan pembayaran dalam
-              </span>
-            </div>
-            <div class="col text-end">
-              <div class="d-inline-flex badge rounded-16" style="background-color: #45BCFF;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                  <path d="M12 10l0 3l2 0" />
-                  <path d="M7 4l-2.75 2" />
-                  <path d="M17 4l2.75 2" />
-                </svg>
-                <span style="line-height: normal;" id="timer">
-                  00:02:00
+      <div class="p-3">
+        <div class="card rounded-16 mb-3" style="background: hsl(202, 100%, 64%, 15%); border: 1px solid #45BCFF;">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <span style="color: black;">
+                  Selesaikan pembayaran dalam
                 </span>
               </div>
+              <div class="col text-end">
+                <div class="d-inline-flex badge rounded-16" style="background-color: #45BCFF;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M12 10l0 3l2 0" />
+                    <path d="M7 4l-2.75 2" />
+                    <path d="M17 4l2.75 2" />
+                  </svg>
+                  <span style="line-height: normal;" id="timer">
+                    00:02:00
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- card-metode-pembayaran -->
-      <div class="card border-none rounded-15 mb-3">
-        <div class="card-body p-2">
-          <div class="d-flex mt-2">
-            <div class="col">
-              <span>Metode pembayaran</span>
+        <!-- card-metode-pembayaran -->
+        <div class="card border-none rounded-15 mb-3">
+          <div class="card-body p-2">
+            <div class="d-flex mt-2">
+              <div class="col">
+                <span>Metode pembayaran</span>
+              </div>
+              <div class="col text-end">
+                <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#offcanvasBottom1" role="button"
+                  aria-controls="offcanvasBottom1">
+                  Lihat Semua
+                </a>
+              </div>
             </div>
-            <div class="col text-end">
-              <a role="button" class="link-theme" data-bs-toggle="offcanvas" href="#offcanvasBottom1" role="button"
-                aria-controls="offcanvasBottom1">
-                Lihat Semua
-              </a>
+            <h6 class="my-3">TRANSFER BANK</h6>
+            <div class="row px-3 m-0 align-items-center">
+              <div class="px-1 d-flex"
+                style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
+                <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+              </div>
+              <div class="col">
+                <b>Bank Jateng (VA)</b>
+                <p class="mb-0 text-truncate">DISHUB SURAKARTA</p>
+              </div>
+              <div class="input-out-border">
+                <input type="checkbox" class="form-check-input">
+              </div>
             </div>
-          </div>
-          <h6 class="my-3">TRANSFER BANK</h6>
-          <div class="row px-3 m-0 align-items-center">
-            <div class="px-1 d-flex"
-              style="background-color: #F4F4F4;width: 50px; height: 50px;align-self:center;border-radius:10px;">
-              <img src="./dist/img/assets/bank-jateng.svg" alt="" style="width: 100%;margin: auto;">
+            <div class="card bg-grey border-none rounded-15 my-3 p-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <b class="col-9 textToCopy">5128770209</b>
+                <a role="button" class="p-1" onclick="copyText('5128770209')">
+                  <img src="./dist/img/assets/icon-copy.svg" alt="">
+                </a>
+              </div>
             </div>
-            <div class="col">
-              <b>Bank Jateng (VA)</b>
-              <p class="mb-0 text-truncate">DISHUB SURAKARTA</p>
+            <span>Jumlah Transfer</span>
+            <div class="card bg-grey border-none rounded-15 mt-1 p-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <b class="col-9 textToCopy">Rp. 500.000</b>
+                <a class="p-1" role="button" onclick="copyText('500000')">
+                  <img src="./dist/img/assets/icon-copy.svg">
+                </a>
+              </div>
             </div>
-            <div class="input-out-border">
-              <input type="checkbox" class="form-check-input">
-            </div>
-          </div>
-          <div class="card bg-grey border-none rounded-15 my-3 p-3">
-            <div class="d-flex align-items-center justify-content-between">
-              <b class="col-9 textToCopy">5128770209</b>
-              <a role="button" class="p-1" onclick="copyText('5128770209')">
-                <img src="./dist/img/assets/icon-copy.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <span>Jumlah Transfer</span>
-          <div class="card bg-grey border-none rounded-15 mt-1 p-3">
-            <div class="d-flex align-items-center justify-content-between">
-              <b class="col-9 textToCopy">Rp. 500.000</b>
-              <a class="p-1" role="button" onclick="copyText('500000')">
-                <img src="./dist/img/assets/icon-copy.svg">
-              </a>
-            </div>
-          </div>
-          <!-- <div class="bukti_pembayaran my-3">
+            <!-- <div class="bukti_pembayaran my-3">
             <img src="./dist/img/assets/images/struk.jpg" alt="">
           </div> -->
-          <div class="d-flex mt-3">
-            <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom"
-              class="btn btn-unggah text-center">
-              <i class="fas fa-upload"></i>
-              Unggah Bukti Transfer
-            </a>
+            <div class="d-flex mt-3">
+              <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom"
+                class="btn btn-unggah text-center">
+                <i class="fas fa-upload"></i>
+                Unggah Bukti Transfer
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card border-none rounded-15">
-        <div class="card-body p-0">
-          <button class="link-transfer" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            <span class="col">Cara Transfer</span>
-            <i class="col text-end fa fa-angle-down"></i>
-          </button>
-          <div class="collapse" id="collapseExample">
-            <div class="p-3 pt-0">
-              <b>Transfer Melalui ATM Bank Jateng</b>
-              <div>
-                <span>1. Masukkan Kartu dan PIN</span>
-                <li class="ms-3">Masukkan Kartu ATM Bank Jateng dan ketikkan PIN Anda</li>
-              </div>
-              <div>
-                <span>2. Pilih "Transfer":</span>
-                <li class="ms-3">Pada Layar Utama ATM, Pilih "Transfer".</li>
-              </div>
-              <div>
-                <span>3. Pilih Jenis "Transfer":</span>
-                <li class="ms-3">Pilih apakah Anda ingin mentransfer uang ke rekening Bank Jateng lainnya atau ke bank
-                  lain.</li>
-              </div>
-              <div>
-                <span>4. Masukkan Nomor Rekening dan Jumlah:</span>
-                <li class="ms-3">Masukkan nomor rekening penerima dan jumlah uang yang ingin Anda transfer.</li>
-              </div>
-              <div>
-                <span>5. Konfirmasi dan Ambil Struk:</span>
-                <li class="ms-3">Periksa detail transaksi, konfirmasikan, dan jangan lupa mengambil struk transaksi
-                  sebagai bukti.</li>
-              </div>
-              <b>Transfer Melalui M-Banking Bank Jateng:</b>
-              <div>
-                <span>1. Buka Aplikasi M-Banking:</span>
-                <li class="ms-3">Buka aplikasi M-Banking Bank Jateng di ponsel Anda.</li>
-              </div>
-              <div>
-                <span>2. Masuk ke Akun Anda:</span>
-                <li class="ms-3">Masuk ke akun M-Banking dengan menggunakan kredensial yang benar.</li>
-              </div>
-              <div>
-                <span>3. Pilih "Transfer":</span>
-                <li class="ms-3">Di menu utama, pilih opsi "Transfer."</li>
-              </div>
-              <div>
-                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
-                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
-              </div>
-              <b>Transfer Melalui Internet Banking Bank Jateng:</b>
-              <div>
-                <span>1. Buka Situs Internet Banking:</span>
-                <li class="ms-3">Kunjungi situs web Internet Banking Bank Jateng.</li>
-              </div>
-              <div>
-                <span>2. Masuk ke Akun Anda:</span>
-                <li class="ms-3">Masuk ke akun Internet Banking dengan menggunakan kredensial yang benar.</li>
-              </div>
-              <div>
-                <span>3. Pilih "Transfer":</span>
-                <li class="ms-3">Di dashboard, pilih opsi "Transfer."</li>
-              </div>
-              <div>
-                <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
-                <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
+        <div class="card border-none rounded-15">
+          <div class="card-body p-0">
+            <button class="link-transfer" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              <span class="col">Cara Transfer</span>
+              <i class="col text-end fa fa-angle-down"></i>
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="p-3 pt-0">
+                <b>Transfer Melalui ATM Bank Jateng</b>
+                <div>
+                  <span>1. Masukkan Kartu dan PIN</span>
+                  <li class="ms-3">Masukkan Kartu ATM Bank Jateng dan ketikkan PIN Anda</li>
+                </div>
+                <div>
+                  <span>2. Pilih "Transfer":</span>
+                  <li class="ms-3">Pada Layar Utama ATM, Pilih "Transfer".</li>
+                </div>
+                <div>
+                  <span>3. Pilih Jenis "Transfer":</span>
+                  <li class="ms-3">Pilih apakah Anda ingin mentransfer uang ke rekening Bank Jateng lainnya atau ke bank
+                    lain.</li>
+                </div>
+                <div>
+                  <span>4. Masukkan Nomor Rekening dan Jumlah:</span>
+                  <li class="ms-3">Masukkan nomor rekening penerima dan jumlah uang yang ingin Anda transfer.</li>
+                </div>
+                <div>
+                  <span>5. Konfirmasi dan Ambil Struk:</span>
+                  <li class="ms-3">Periksa detail transaksi, konfirmasikan, dan jangan lupa mengambil struk transaksi
+                    sebagai bukti.</li>
+                </div>
+                <b>Transfer Melalui M-Banking Bank Jateng:</b>
+                <div>
+                  <span>1. Buka Aplikasi M-Banking:</span>
+                  <li class="ms-3">Buka aplikasi M-Banking Bank Jateng di ponsel Anda.</li>
+                </div>
+                <div>
+                  <span>2. Masuk ke Akun Anda:</span>
+                  <li class="ms-3">Masuk ke akun M-Banking dengan menggunakan kredensial yang benar.</li>
+                </div>
+                <div>
+                  <span>3. Pilih "Transfer":</span>
+                  <li class="ms-3">Di menu utama, pilih opsi "Transfer."</li>
+                </div>
+                <div>
+                  <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
+                  <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
+                </div>
+                <b>Transfer Melalui Internet Banking Bank Jateng:</b>
+                <div>
+                  <span>1. Buka Situs Internet Banking:</span>
+                  <li class="ms-3">Kunjungi situs web Internet Banking Bank Jateng.</li>
+                </div>
+                <div>
+                  <span>2. Masuk ke Akun Anda:</span>
+                  <li class="ms-3">Masuk ke akun Internet Banking dengan menggunakan kredensial yang benar.</li>
+                </div>
+                <div>
+                  <span>3. Pilih "Transfer":</span>
+                  <li class="ms-3">Di dashboard, pilih opsi "Transfer."</li>
+                </div>
+                <div>
+                  <span>4. Pilih Penerima, Jumlah, dan Konfirmasi:</span>
+                  <li class="ms-3">Pilih penerima, masukkan jumlah uang, dan konfirmasikan transaksi.</li>
+                </div>
               </div>
             </div>
           </div>
@@ -196,16 +198,13 @@
       </div>
     </div>
 
-    <div class="bg-white mt-auto px-4 py-3 text-center">
+    <!-- <div class="bg-white mt-auto px-4 py-3 text-center"> -->
+    <div class="stick-bottom-card d-flex flex-column">
       <p class="mb-1">Jika sudah transfer, mohon Upload bukti transfer & klik tombol dibawah ini agar kami dapat segera
         memproses.</p>
-      <div class="row">
-        <div class="col-12">
-          <a href="status-transaksi.html" class="btn rounded-16 btn-modal" style="background: #F4F4F4; border: none;">
-            <span class="strong">Saya Sudah Transfer</span>
-          </a>
-        </div>
-      </div>
+      <a href="status-transaksi.html" class="btn rounded-16 btn-modal mt-auto" style="background: #F4F4F4; border: none;">
+        <span class="strong">Saya Sudah Transfer</span>
+      </a>
     </div>
   </div>
 

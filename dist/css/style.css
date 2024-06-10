@@ -6,6 +6,7 @@
 
 :root {
   --bs-font-work-sans: 'work sans';
+  --stick-bottom-height:140px;
 }
 
 .ml-1 {
@@ -326,4 +327,18 @@ margin-top:-2rem !important;
 
 .badge-baru {
   background: #EB5241;
+}
+
+.stick-bottom-card{
+  background-color: white;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  min-height: var(--stick-bottom-height);
+}
+
+.scroll-contentbox{
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: calc(100vh - var(--stick-bottom-height));
 }
