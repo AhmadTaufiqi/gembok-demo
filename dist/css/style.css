@@ -84,6 +84,9 @@ h6{
 .bold {
   font-weight: 600;
 }
+.light{
+  font-weight: 300;
+}
 
 .title-homepage .title-black {
   color: #201F20;
@@ -118,6 +121,10 @@ h6{
 
 .red-theme {
   color: #E42915;
+}
+
+.bg-red-theme {
+  background-color: #E42915;
 }
 
 .btn-red-theme {
@@ -290,7 +297,7 @@ margin-top:-2rem !important;
 }
 
 .bg-cek-tilang{
-  background-image:url('../img/assets/images/bg-4.png');
+  background-image:url('../img/assets/images/bg-5.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #fff;
@@ -341,4 +348,68 @@ margin-top:-2rem !important;
   flex-direction: column;
   overflow: scroll;
   height: calc(100vh - var(--stick-bottom-height));
+}
+
+.running-text{
+  height: 50px;	
+  padding: 13px;
+  overflow: hidden;
+  position: relative;
+  background-color: #EB5241;
+  color: white;
+}
+
+.welcome-running-text{
+  text-transform: uppercase;
+  font-size: 17px;
+  text-wrap: nowrap;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  /* Starting position */
+  transform:translateX(100%);
+  animation: scroll-left 15s linear infinite;
+  /* Move it (define the animation) */
+}
+@keyframes scroll-left {
+    0%   {
+    transform: translateX(0px);
+    }
+    100% {
+    transform: translateX(-1090px); 
+    }
+}
+
+.jenis-denda{
+  background:linear-gradient(90deg,#db5b4d,#ca220f);
+  margin:20px 5px 0 5px;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.jenis-denda h1{
+  font-weight: normal!important;
+  margin-bottom: 0;
+}
+
+.img-denda{
+  overflow: hidden;
+  filter: drop-shadow(9px 11px 7px rgba(0,0,0,.8));
+}
+
+.btn-pill2{
+  background-color: rgba(255, 255, 255, 0.167);
+  border-radius: 18px;
+}
+
+.card-jenis-denda{
+  margin-top:-2.5rem;
+  background: black;
+  border-radius: 18px 18px 0 0;
+  z-index: 1;
 }
