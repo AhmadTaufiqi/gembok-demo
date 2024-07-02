@@ -192,6 +192,12 @@ h6{
 .rounded-15 {
   border-radius: 1rem;
 }
+.rounded-24 {
+  border-radius: 24px;
+}
+.rounded-8 {
+  border-radius: 8px;
+}
 
 .link-theme {
   color: #E42915;
