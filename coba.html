@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Input No Plat dan No Whatsapp</title>
+    <title>Upload Foto Button</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        .error {
-            color: red;
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .upload-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .upload-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: 2px solid black;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .upload-button input[type="file"] {
             display: none;
+        }
+
+        .upload-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        .upload-button:hover {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
+
 <body>
-    <form id="number-form">
-        <div>
-            <label for="no-plat">No Plat:</label>
-            <input type="text" id="no-plat" name="no-plat" required>
-            <span class="error" id="error-plat">Harap masukkan angka yang valid.</span>
-        </div>
-        <div>
-            <label for="no-whatsapp">No Whatsapp:</label>
-            <input type="text" id="no-whatsapp" name="no-whatsapp" required>
-            <span class="error" id="error-whatsapp">Harap masukkan angka yang valid.</span>
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-
-    <script>
-        document.getElementById('number-form').addEventListener('submit', function(event) {
-            var noPlat = document.getElementById('no-plat').value;
-            var noWhatsapp = document.getElementById('no-whatsapp').value;
-            var errorPlat = document.getElementById('error-plat');
-            var errorWhatsapp = document.getElementById('error-whatsapp');
-
-            var isValid = true;
-
-            if (isNaN(noPlat) || noPlat === '') {
-                errorPlat.style.display = 'inline';
-                isValid = false;
-            } else {
-                errorPlat.style.display = 'none';
-            }
-
-            if (isNaN(noWhatsapp) || noWhatsapp === '') {
-                errorWhatsapp.style.display = 'inline';
-                isValid = false;
-            } else {
-                errorWhatsapp.style.display = 'none';
-            }
-
-            if (!isValid) {
-                event.preventDefault();
-            }
-        });
-    </script>
+    <div class="upload-button-container">
+        <label for="upload-photo" class="upload-button">
+            <input type="file" id="upload-photo" accept="image/jpeg, image/png" hidden>
+            <img src="download-icon.png" alt="Upload Icon" class="upload-icon">
+            Upload Foto
+        </label>
+    </div>
 </body>
+
 </html>

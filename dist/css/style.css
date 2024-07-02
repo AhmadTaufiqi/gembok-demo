@@ -310,13 +310,8 @@ input[type="checkbox"]:focus,
   padding: 0 12px;
 }
 
-<<<<<<< Updated upstream
 .bg-cek-tilang{
   background-image:url('../img/assets/images/bg-5.png');
-=======
-.bg-cek-tilang {
-  background-image: url("../img/assets/images/bg-4.png");
->>>>>>> Stashed changes
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #fff;
@@ -369,7 +364,6 @@ input[type="checkbox"]:focus,
   height: calc(100vh - var(--stick-bottom-height));
 }
 
-<<<<<<< Updated upstream
 .running-text{
   height: 50px;	
   padding: 13px;
@@ -433,34 +427,3 @@ input[type="checkbox"]:focus,
   border-radius: 18px 18px 0 0;
   z-index: 1;
 }
-=======
-/* style button upload */
-.upload-button {
-  display: inline-flex;
-  align-items: center;
-  width: 375px;
-  height: 54px;
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 12px;
-  border: 1px solid black;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 12px;
-}
-
-.upload-button input[type="file"] {
-  display: none;
-}
-
-.upload-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-.upload-button:hover {
-  background-color: transparent;
-}
->>>>>>> Stashed changes

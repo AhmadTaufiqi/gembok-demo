@@ -84,17 +84,20 @@
               </div>
               <div class="mb-3">
                 <span class="form-label required" style="color: #152C5B;">Lokasi</span>
-                <textarea class="form-control rounded-8" name="textarealokasi" rows="6" style="height: 110px;">
-                    </textarea>
+                <textarea class="form-control rounded-8" name="textarealokasi" rows="6" style="height: 110px;"></textarea>
               </div>
               <div class="mb-3">
                 <span class="form-label required" style="color: #152C5B;">Lampiran Foto<span
                     class="text-muted">(opsional)</span></span>
-                <span for="upload-photo" class="upload-button">
-                  <input type="file" id="upload-photo" accept="image/jpeg, image/png" hidden>
-                  <img src="download-icon.png" alt="Upload Icon" class="upload-icon">
-                  Upload Foto
-                </span>
+                    <div class="d-flex">
+                      <button id="upload-foto" class="btn btn-default p-3 rounded-16 w-100"><i class="fas fa-upload red-theme"></i> Upload Foto</button>
+                    </div>
+                    <input hidden type="file" name="upload_file" id="input_uploadfoto">
+                <!-- <span for="upload-photo" class="upload-button"> -->
+                  <!-- <input type="file" id="upload-photo" accept="image/jpeg, image/png" hidden> -->
+                  <!-- <img src="download-icon.png" alt="Upload Icon" class="upload-icon"> -->
+                  <!-- Upload Foto -->
+                <!-- </span> -->
                 <p class="text-muted text-center mt-2">Silahkan lampirkan foto lokasi kendaraan anda, agar
                   kami bisa lebih cepat memproses
                   kendaraan anda.</p>
@@ -195,6 +198,13 @@
     </div>
   </div>
 </body>
+<script>
+  const btn_upload = document.getElementById('upload-foto');
+  const input_uploadfoto = document.getElementById('input_uploadfoto');
+  btn_upload.addEventListener('click',function(){
+    input_uploadfoto.click()
+  })
+</script>
 <script>
   function changeTab(tabNumber) {
     // Hide all content elements
