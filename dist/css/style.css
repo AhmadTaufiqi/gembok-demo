@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'work sans';
+  font-family: "work sans";
   font-weight: 400;
   font-style: normal;
 }
 
 :root {
-  --bs-font-work-sans: 'work sans';
-  --stick-bottom-height:140px;
+  --bs-font-work-sans: "work sans";
+  --stick-bottom-height: 140px;
 }
 
 .ml-1 {
@@ -23,19 +23,18 @@
 }
 
 body {
-  font-family: 'work sans';
-  background-color: #EFE9EA;
+  font-family: "work sans";
+  background-color: #efe9ea;
   font-weight: 400;
   font-size: 77%;
 }
 
 .navbar {
-  padding: .5rem 1rem;
-  background-color: #201F20;
+  padding: 0.5rem 1rem;
+  background-color: #201f20;
   border-radius: 3rem;
-
 }
-h6{
+h6 {
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -57,13 +56,13 @@ h6{
 
 .nav-item {
   border-radius: 3rem;
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
 }
 
 .nav-item.active {
   border-radius: 3rem;
   /* background-color: #ef4937; */
-  background-image: linear-gradient(126deg, #ea5040, #E42915);
+  background-image: linear-gradient(126deg, #ea5040, #e42915);
 }
 
 .nav-item.active .nav-link {
@@ -89,12 +88,12 @@ h6{
 }
 
 .title-homepage .title-black {
-  color: #201F20;
+  color: #201f20;
   font-size: calc(1.475rem + 1.9vw);
 }
 
 .title-homepage .title-red {
-  color: #E42915;
+  color: #e42915;
   font-size: calc(1.475rem + 1.9vw);
 }
 
@@ -113,14 +112,14 @@ h6{
 }
 
 .total-pelanggar {
-  color: #E42915;
+  color: #e42915;
   font-size: 3rem;
   font-weight: 800;
   margin: 0;
 }
 
 .red-theme {
-  color: #E42915;
+  color: #e42915;
 }
 
 .bg-red-theme {
@@ -128,7 +127,7 @@ h6{
 }
 
 .btn-red-theme {
-  background-color: #E42915;
+  background-color: #e42915;
   display: flex;
   padding: 0 0 0 30px;
   justify-content: space-between;
@@ -150,7 +149,7 @@ h6{
 }
 
 .success_position_bar {
-  background-image: url('../../dist/img/assets/images/bg_succes_transaksi.jpg');
+  background-image: url("../../dist/img/assets/images/bg_succes_transaksi.jpg");
   padding: 15px 17px;
   position: relative;
   height: 11rem;
@@ -177,7 +176,7 @@ h6{
 .position_bar .btn_back {
   font-size: 22px;
   text-decoration: none;
-  color: #201F20;
+  color: #201f20;
   line-height: normal;
 }
 
@@ -199,8 +198,16 @@ h6{
   border-radius: 8px;
 }
 
+.rounded-24 {
+  border-radius: 24px;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
 .link-theme {
-  color: #E42915;
+  color: #e42915;
   font-weight: 600;
   text-decoration: none;
 }
@@ -218,11 +225,11 @@ h6{
   background-size: contain;
 }
 
-.form-check-input[type=checkbox] {
+.form-check-input[type="checkbox"] {
   border-radius: 1em;
 }
 
-.form-check-input:checked[type=checkbox] {
+.form-check-input:checked[type="checkbox"] {
   --tblr-form-check-bg-image: none;
 }
 
@@ -261,7 +268,8 @@ input[type="color"]:focus,
 input[type="checkbox"]:focus,
 .uneditable-input:focus {
   border-color: rgba(245, 116, 11, 0.8);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 162, 104, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(239, 162, 104, 0.6);
   outline: 0 none;
 }
 
@@ -269,12 +277,12 @@ input[type="checkbox"]:focus,
   border-radius: 1rem;
   border: 1px solid #ea5040;
   color: #ea5040;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   width: 100%;
 }
 
-.link-transfer{
+.link-transfer {
   border: unset;
   text-align: left;
   background-color: unset;
@@ -282,48 +290,53 @@ input[type="checkbox"]:focus,
   width: 100%;
   align-items: center;
   text-decoration: none;
-  color: #201F20;
+  color: #201f20;
   line-height: 1;
   padding: 1.2rem;
 }
 
 .bg-grey {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
-.mt--5{
-margin-top:-2rem !important;
+.mt--5 {
+  margin-top: -2rem !important;
 }
 
-.btn-submit-cek{
+.btn-submit-cek {
   position: absolute;
   right: 0;
   text-align: right;
-  padding:0 12px;
+  padding: 0 12px;
 }
 
+<<<<<<< Updated upstream
 .bg-cek-tilang{
   background-image:url('../img/assets/images/bg-5.png');
+=======
+.bg-cek-tilang {
+  background-image: url("../img/assets/images/bg-4.png");
+>>>>>>> Stashed changes
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #fff;
-  background-position-y:-2rem;
+  background-position-y: -2rem;
 }
 
-.accordion-item{
+.accordion-item {
   border: none;
 }
-.accordion-button{
-  padding: .75rem 0rem!important;
+.accordion-button {
+  padding: 0.75rem 0rem !important;
   line-height: 1.3;
 }
-.accordion-body2{
-  padding:.5rem;
-  background-color: #F5F5F5;
+.accordion-body2 {
+  padding: 0.5rem;
+  background-color: #f5f5f5;
   border-radius: 1rem;
 }
 
-.bukti_pembayaran{
+.bukti_pembayaran {
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -335,27 +348,28 @@ margin-top:-2rem !important;
 
 .badge-selesai {
   background: hsl(112, 100%, 63%, 20%);
-  color: #76C03C;
+  color: #76c03c;
 }
 
 .badge-baru {
-  background: #EB5241;
+  background: #eb5241;
 }
 
-.stick-bottom-card{
+.stick-bottom-card {
   background-color: white;
   text-align: center;
   padding: 1rem 1.2rem;
   min-height: var(--stick-bottom-height);
 }
 
-.scroll-contentbox{
+.scroll-contentbox {
   display: flex;
   flex-direction: column;
   overflow: scroll;
   height: calc(100vh - var(--stick-bottom-height));
 }
 
+<<<<<<< Updated upstream
 .running-text{
   height: 50px;	
   padding: 13px;
@@ -419,3 +433,34 @@ margin-top:-2rem !important;
   border-radius: 18px 18px 0 0;
   z-index: 1;
 }
+=======
+/* style button upload */
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  width: 375px;
+  height: 54px;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.upload-button input[type="file"] {
+  display: none;
+}
+
+.upload-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.upload-button:hover {
+  background-color: transparent;
+}
+>>>>>>> Stashed changes
