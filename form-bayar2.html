@@ -14,13 +14,17 @@
   <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet" />
   <link href="./dist/css/demo.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler.css" rel="stylesheet" />
-  <link href="./dist/css/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600;700;800&family=Work+Sans:wght@200;300;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.css">
 
   <style>
     @import url('https://rsms.me/inter/inter.css');
@@ -33,10 +37,11 @@
       font-feature-settings: "cv03", "cv04", "cv11";
     }
   </style>
+
 </head>
 
 <body>
-  <div class="page">
+  <div class="page justify-content-between">
     <div class="scroll-contentbox">
       <div class="col-12" style="background-color: white;">
         <div class="input-icon mb-2">
@@ -53,8 +58,6 @@
           </div>
         </div>
       </div>
-
-      <!-- cards -->
       <div class="row row-card mt-4">
         <div class="col-md-6">
           <div class="card" style="box-shadow: none;">
@@ -84,19 +87,21 @@
               </div>
               <div class="mb-3">
                 <span class="form-label required" style="color: #152C5B;">Lokasi</span>
-                <textarea class="form-control rounded-8" name="textarealokasi" rows="6" style="height: 110px;"></textarea>
+                <textarea class="form-control rounded-8" name="textarealokasi" rows="6"
+                  style="height: 110px;"></textarea>
               </div>
               <div class="mb-3">
                 <span class="form-label required" style="color: #152C5B;">Lampiran Foto<span
                     class="text-muted">(opsional)</span></span>
-                    <div class="d-flex">
-                      <button id="upload-foto" class="btn btn-default p-3 rounded-16 w-100"><i class="fas fa-upload red-theme"></i> Upload Foto</button>
-                    </div>
-                    <input hidden type="file" name="upload_file" id="input_uploadfoto">
+                <div class="d-flex">
+                  <button id="upload-foto" class="btn btn-default p-3 rounded-16 w-100"><i
+                      class="fas fa-upload red-theme p-2"></i> Upload Foto</button>
+                </div>
+                <input hidden type="file" name="upload_file" id="input_uploadfoto">
                 <!-- <span for="upload-photo" class="upload-button"> -->
-                  <!-- <input type="file" id="upload-photo" accept="image/jpeg, image/png" hidden> -->
-                  <!-- <img src="download-icon.png" alt="Upload Icon" class="upload-icon"> -->
-                  <!-- Upload Foto -->
+                <!-- <input type="file" id="upload-photo" accept="image/jpeg, image/png" hidden> -->
+                <!-- <img src="download-icon.png" alt="Upload Icon" class="upload-icon"> -->
+                <!-- Upload Foto -->
                 <!-- </span> -->
                 <p class="text-muted text-center mt-2">Silahkan lampirkan foto lokasi kendaraan anda, agar
                   kami bisa lebih cepat memproses
@@ -124,83 +129,86 @@
         </div>
       </div>
     </div>
-      <!-- card button bayar -->
-   <div class="stick-bottom-card" style="background-color: white;">
-    <div class="d-flex align-items-center">
-      <div class="col-3">
-        <div class="d-flex g-3 align-items-center float-start p-1 mt-1">
-          <div class="col text-truncate text-start">
-            <p class="text-truncate mb-0" style="font-size: 14px;">Total denda</p>
-            <h3 class=" mb-0 text-truncate" style="color: #EB5241;">RP. 600.000</h3>
+
+    <!-- <div class="bg-white mt-auto px-4 py-3 text-center"> -->
+      <!-- button Lanjutkan -->
+    <div class="stick-bottom-card d-flex flex-column">
+      <div class="row">
+        <div class="col-5 col-md-5">
+          <div class="d-flex g-3 align-items-center float-start p-1 mt-1">
+            <div class="col text-truncate text-start">
+              <p class="text-truncate mb-0" style="font-size: 14px;">Total denda</p>
+              <h3 class=" mb-0 text-truncate" style="color: #EB5241;">RP. 600.000</h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-9 mt-3" style=" margin-left: 65px;">
-        <h2 class="text-truncate">
-          <a role="button" class="btn rounded-24 text-white btn-bayar mt-3 m-1" style="background: #EB5241; box-shadow: none; width: 215px;"
-            data-bs-toggle="offcanvas" href="#offcanvasBottom" aria-controls="offcanvasBottom">
-            <span style="margin-right: 5px;">Lanjutkan Pembayaran</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M5 12l14 0" />
-              <path d="M15 16l4 -4" />
-              <path d="M15 8l4 4" />
-            </svg>
-          </a>
-        </h2>
+        <div class="col-7 col-md-7">
+          <a role="button" class="btn rounded-24 text-white btn-bayar mt-1 m-1 "
+              style="background: #EB5241; box-shadow: none; width: 215px;"  data-bs-toggle="offcanvas"
+              href="#offcanvasBottom" aria-controls="offcanvasBottom">
+              <span>Lanjutkan Pembayaran</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
+            </a>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
-  <!-- modal metode pembayaran -->
-  <div class="offcanvas offcanvas-bottom m-3 rounded-24 fade" style="height:auto;" tabindex="-1" id="offcanvasBottom"
-    aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
-    <div class="offcanvas-header border-none py-3">
-      <b class="text-start w-100">Pilih Metode Bayar</b>
-    </div>
+<!-- modal start -->
+<div class="offcanvas offcanvas-bottom m-3 rounded-24 fade" style="height: auto;" tabindex="-1" id="offcanvasBottom"
+aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+<div class="offcanvas-header border-none py-3">
+  <b class="text-start w-100">Pilih Metode Bayar</b>
+</div>
+
+<div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
+  <b class="text-start w-100">Transfer Bank</b>
+</div>
+
+<!-- <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
+  style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a> -->
+<div class="text-start">
+  <div>
+    <a href="metode-bayar.html" class="btn" style=" border: none;">
+      <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
+      <span>Bank Jateng</span>
+      <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 6l6 6l-6 6" />
+      </svg>
+    </a>
+
 
     <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
-      <b class="text-start w-100">Transfer Bank</b>
+      <b class="text-start w-100">Lainnya</b>
     </div>
-
-    <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
-      style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a>
-    <div class="text-start">
-      <div>
-        <a href="metode-bayar.html" class="btn" style=" border: none;">
-          <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
-          <span>Bank Jateng</span>
-          <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 6l6 6l-6 6" />
-          </svg>
-        </a>
-
-
-        <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
-          <b class="text-start w-100">Lainnya</b>
-        </div>
-        <a href="metode-qris.html" class="btn" style=" border: none;">
-          <img class="p-3" src="dist/img/assets/qris.png" alt="bank_jateng">
-          <span>QRIS</span>
-          <svg style="margin-left: 197px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 6l6 6l-6 6" />
-          </svg>
-        </a>
-      </div>
-    </div>
+    <a href="metode-qris.html" class="btn" style=" border: none;">
+      <img class="p-3" src="dist/img/assets/qris.png" alt="bank_jateng">
+      <span>QRIS</span>
+      <svg style="margin-left: 197px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 6l6 6l-6 6" />
+      </svg>
+    </a>
   </div>
+</div>
+</div>
 </body>
 <script>
   const btn_upload = document.getElementById('upload-foto');
   const input_uploadfoto = document.getElementById('input_uploadfoto');
-  btn_upload.addEventListener('click',function(){
+  btn_upload.addEventListener('click', function () {
     input_uploadfoto.click()
   })
 </script>
@@ -218,8 +226,51 @@
   }
 
 </script>
+
 <script src="./dist/js/demo-theme.min.js"></script>
+<script src="./dist/js/jquery.min.js"></script>
 <script src="./dist/js/tabler.min.js" defer></script>
 <script src="./dist/js/demo.min.js" defer></script>
+
+<script>
+  $('#input_gallery').on('click', function () {
+    var fileinput = $(this + ' input[type="file"]')[0]
+    console.log(fileinput);
+    fileinput.click()
+  })
+</script>
+
+<script>
+  // Set the initial time in seconds
+  let time = 120; // 2 minutes
+
+  // Function to start the countdown
+  function startCountdown() {
+    const timerElement = document.getElementById('timer');
+
+    const countdown = setInterval(() => {
+      // Calculate minutes and seconds
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+
+      // Format the time as "0:MM:SS"
+      const formattedTime = `0:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      // Display the time
+      timerElement.textContent = formattedTime;
+
+      // Decrement the time by 1 second
+      time--;
+
+      // Stop the countdown when the time reaches 0
+      if (time < 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
+  }
+
+  // Start the countdown
+  startCountdown();
+</script>
 
 </html>
