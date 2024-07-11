@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Blank page - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+  <title>GEMBOK</title>
   <!-- CSS files -->
   <link href="./dist/css/tabler.min.css" rel="stylesheet" />
   <link href="./dist/css/tabler-flags.min.css" rel="stylesheet" />
@@ -35,6 +35,71 @@
 
     .card {
       box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, .05) !important;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .modal-content {
+      background-color: #FFFFFF;
+      width: 327px;
+      height: 480px;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .modal-content p {
+      margin: 0 0 10px 0;
+      font-size: 12px;
+      /* Adjusted font size to fit the content */
+      line-height: 1.4;
+      /* Adjusted line height for better fit */
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .close-btn:focus {
+      outline: none;
+    }
+
+    .modal-footer {
+      margin-top: 8px;
+    }
+
+    .close-modal-btn {
+      width: 327px;
+      height: 46px;
+      border-radius: 24px;
+      background-color: #FFFFFF;
+      border: none;
+      font-size: 12px;
+      color: #EC3F2D;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -81,13 +146,45 @@
             </div>
           </a>
         </div>
-
       </div>
+    </div>
+  </div>
+  <!-- modal pop up -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="">
+        <p>Yth, Pengemudi srantal sruntul</p>
+        <p>Anda telah melakukan pelanggaran parkir liar, silahkan lakukan pembayaran denda untuk menyelesaikan tilang!
+        </p>
+        <p>Berikut tata cara melakukan pembayaran secara online:</p>
+        <p>1. Scan QR Code pada surat tilang.</p>
+        <p>2. Setelah berhasil anda scan, anda akan masuk ke platform pembayaran denda kami.</p>
+        <p>3. Masukan data-data seperti, No. Plat, Lokasi kendaraan & Lampiran foto kendaraan (Opsional).</p>
+        <p>4. Pilih metode pembayaran dan selesaikan pembayaran, kami menyediakan metode transfer & QRIS.</p>
+        <p>5. Jika sudah menyelesaikan pembayaran, upload bukti pembayaran (Jika menggunakan metode transfer).</p>
+        <p>6. Tekan tombol “Saya Sudah Transfer” untuk mengirim data dan tilang anda akan segera kami tindak.</p>
+        <p>Dinas Perhubungan Kota Surakarta</p>
+      </div>
+    </div>
+    <div class="mt-3" style="background-color: transparent;">
+      <button class="close-modal-btn" onclick="closeModal()">Oke, Saya Paham</button>
     </div>
   </div>
 </body>
 <script src="./dist/js/demo-theme.min.js"></script>
 <script src="./dist/js/tabler.min.js" defer></script>
 <script src="./dist/js/demo.min.js" defer></script>
+<script>
+  function showModal() {
+    document.getElementById("myModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  // Display the modal when the page loads
+  window.onload = showModal;
+</script>
 
 </html>
