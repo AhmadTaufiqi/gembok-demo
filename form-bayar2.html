@@ -43,9 +43,9 @@
 <body>
   <div class="page justify-content-between">
     <div class="scroll-contentbox">
-      <div class="col-12" style="background-color: white;">
+      <div style="background-color: white;">
         <div class="input-icon mb-2">
-          <div class="row">
+          <div class="row mx-0">
             <div class="col-6 col-sm-4 col-md-2 col-xl py-3">
               <img src="dist/img/assets/logo-dishub.png" alt="logo-dishub" width="166" height="47">
             </div>
@@ -58,8 +58,8 @@
           </div>
         </div>
       </div>
-      <div class="row row-card mt-4">
-        <div class="col-md-6">
+      <div class="mt-3 mx-2 ">
+        <div class="">
           <div class="card" style="box-shadow: none;">
             <div class="card-body">
               <div class="mb-3">
@@ -76,7 +76,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 mt-2">
+        <div class="mt-2">
           <div class="card" style="box-shadow: none;">
             <div class="card-header text-muted" style="border-bottom: none;">Informasi Kendaraan</div>
             <div class="card-body">
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 mt-2 mb-3">
+        <div class="mt-2 mb-3">
           <div class="card" style="box-shadow: none;">
             <div class="card-header text-muted" style="border-bottom: none;">Informasi Pemilik Kendaraan
               Kendaraan</div>
@@ -131,79 +131,77 @@
     </div>
 
     <!-- <div class="bg-white mt-auto px-4 py-3 text-center"> -->
-      <!-- button Lanjutkan -->
+    <!-- button Lanjutkan -->
     <div class="stick-bottom-card d-flex flex-column">
       <div class="row">
-        <div class="col-5 col-md-5">
-          <div class="d-flex g-3 align-items-center float-start p-1 mt-1">
-            <div class="col text-truncate text-start">
-              <p class="text-truncate mb-0" style="font-size: 14px;">Total denda</p>
-              <h3 class=" mb-0 text-truncate" style="color: #EB5241;">RP. 600.000</h3>
-            </div>
+        <div class="col-4">
+          <div class="col text-truncate text-start">
+            <p class="text-truncate mb-0" style="font-size: 14px;">Total denda</p>
+            <h3 class=" mb-0 text-truncate" style="color: #EB5241;">RP. 600.000</h3>
           </div>
         </div>
-        <div class="col-7 col-md-7">
-          <a role="button" class="btn rounded-24 text-white btn-bayar mt-1 m-1 "
-              style="background: #EB5241; box-shadow: none; width: 215px;"  data-bs-toggle="offcanvas"
-              href="#offcanvasBottom" aria-controls="offcanvasBottom">
-              <span>Lanjutkan Pembayaran</span>
+        <div class="col text-end">
+          <a role="button" class="btn rounded-2 text-white btn-bayar d-inline-flex" style="background: #EB5241; box-shadow: none;"
+            data-bs-toggle="offcanvas" href="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <span>Lanjutkan Pembayaran
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right m-0">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M5 12l14 0" />
                 <path d="M15 16l4 -4" />
                 <path d="M15 8l4 4" />
               </svg>
-            </a>
+            </span>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-<!-- modal start -->
-<div class="offcanvas offcanvas-bottom m-3 rounded-24 fade" style="height: auto;" tabindex="-1" id="offcanvasBottom"
-aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
-<div class="offcanvas-header border-none py-3">
-  <b class="text-start w-100">Pilih Metode Bayar</b>
-</div>
-
-<div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
-  <b class="text-start w-100">Transfer Bank</b>
-</div>
-
-<!-- <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
-  style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a> -->
-<div class="text-start">
-  <div>
-    <a href="metode-bayar.html" class="btn" style=" border: none;">
-      <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
-      <span>Bank Jateng</span>
-      <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
-        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M9 6l6 6l-6 6" />
-      </svg>
-    </a>
-
+  <!-- modal start -->
+  <div class="offcanvas offcanvas-bottom m-3 rounded-24 fade" style="height: auto;" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas-header border-none py-3">
+      <b class="text-start w-100">Pilih Metode Bayar</b>
+    </div>
 
     <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
-      <b class="text-start w-100">Lainnya</b>
+      <b class="text-start w-100">Transfer Bank</b>
     </div>
-    <a href="metode-qris.html" class="btn" style=" border: none;">
-      <img class="p-3" src="dist/img/assets/qris.png" alt="bank_jateng">
-      <span>QRIS</span>
-      <svg style="margin-left: 197px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
-        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M9 6l6 6l-6 6" />
-      </svg>
-    </a>
+
+    <!-- <a role="button" type="button" class="btn-close text-reset p-2" data-bs-dismiss="offcanvas" aria-label="Close"
+  style="position: absolute; right: 0; top: -30px;font-size: 20px;"></a> -->
+    <div class="text-start">
+      <div>
+        <a href="metode-bayar.html" class="btn" style=" border: none;">
+          <img class="p-3" src="dist/img/assets/bank-jateng.svg" alt="bank_jateng">
+          <span>Bank Jateng</span>
+          <svg style="margin-left: 150px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </a>
+
+
+        <div class="offcanvas-header border-none py-0 mt-2" style="border: none;">
+          <b class="text-start w-100">Lainnya</b>
+        </div>
+        <a href="metode-qris.html" class="btn" style=" border: none;">
+          <img class="p-3" src="dist/img/assets/qris.png" alt="bank_jateng">
+          <span>QRIS</span>
+          <svg style="margin-left: 197px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </body>
 <script>
   const btn_upload = document.getElementById('upload-foto');
